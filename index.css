@@ -1,0 +1,3494 @@
+/* =========================================
+   POLICYPATH — HOME 1 HERO
+   Desktop + Tablet + Mobile
+   Light Mode + Dark Mode + RTL
+   ========================================= */
+
+.home-hero {
+  width: 100%;
+  position: relative;
+  margin-top: 90px;
+  height: 91vh;
+  overflow: hidden;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* MAIN SECTION CONTAINER */
+
+.home-hero-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 65px 55px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+
+  position: relative;
+}
+
+/* LEFT CONTENT */
+
+.home-hero-content {
+  width: 100%;
+  max-width: 580px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 24px;
+
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  color: var(--secondary);
+}
+
+.eyebrow-line {
+  width: 32px;
+  height: 2px;
+  flex-shrink: 0;
+  background: var(--secondary);
+}
+
+/* MAIN HEADING */
+
+.home-hero-title {
+  margin: 0 0 24px;
+
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -1.4px;
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.hero-title-highlight {
+  display: block;
+  margin-top: 8px;
+  color: var(--secondary);
+}
+
+/* DESCRIPTION */
+
+.home-hero-description {
+  max-width: 520px;
+  margin: 0 0 30px;
+
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.85;
+
+  color: var(--muted);
+}
+
+/* BUTTONS */
+
+.home-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  margin-bottom: 28px;
+}
+
+.hero-btn {
+  min-height: 52px;
+  padding: 14px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.hero-btn i,
+.hero-btn svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.hero-btn-primary:hover {
+  background: var(--signup-hover);
+  border-color: var(--signup-hover);
+  color: var(--signup-text);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--primary);
+}
+
+.hero-btn-secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+}
+
+/* TRUST MESSAGE */
+
+.home-hero-trust {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  max-width: 490px;
+}
+
+.trust-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.trust-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.home-hero-trust p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+/* RIGHT VISUAL */
+
+.home-hero-visual {
+  width: 100%;
+  min-width: 0;
+  position: relative;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  min-height: 480px;
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-main-image {
+  display: block;
+
+  width: 100%;
+  height: 480px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+/* FLOATING CARD */
+
+.hero-info-card {
+  position: absolute;
+  z-index: 3;
+
+  left: -35px;
+  bottom: 35px;
+
+  width: min(310px, 85%);
+  padding: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  box-shadow: var(--header-shadow);
+}
+
+.hero-info-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface-hover);
+  color: var(--secondary);
+  border-radius: 8px;
+}
+
+.hero-info-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.hero-info-content h3 {
+  margin: 0 0 7px;
+
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: var(--text);
+}
+
+.hero-info-content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: var(--muted);
+}
+
+/* DECORATIVE ACCENT */
+
+.hero-image-accent {
+  position: absolute;
+  z-index: 0;
+
+  top: -16px;
+  right: -16px;
+
+  width: 125px;
+  height: 125px;
+
+  border-top: 3px solid var(--secondary);
+  border-right: 3px solid var(--secondary);
+  border-radius: 0 12px 0 0;
+
+  pointer-events: none;
+}
+
+/* =========================================
+   HOME 1 — INSURANCE SOLUTIONS
+   ========================================= */
+
+.insurance-solutions {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.insurance-solutions-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* SECTION HEADER */
+
+.insurance-solutions-header {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.solutions-title {
+  margin: 0 0 18px;
+
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+
+  color: var(--text);
+}
+
+.solutions-title span {
+  color: var(--secondary);
+}
+
+.solutions-description {
+  max-width: 680px;
+  margin: 0 auto;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* THREE-CARD GRID */
+
+.insurance-solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* CARD */
+
+.insurance-solution-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  background: var(--site-bg);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.insurance-solution-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+  box-shadow: var(--header-shadow);
+}
+
+/* IMAGE */
+
+.solution-image {
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--surface-hover);
+}
+
+.solution-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.insurance-solution-card:hover .solution-image img {
+  transform: scale(1.04);
+}
+
+/* CARD CONTENT */
+
+.solution-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 26px;
+}
+
+.solution-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface-hover);
+  color: var(--secondary);
+  border-radius: 8px;
+}
+
+.solution-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.solution-card-content h3 {
+  margin: 0 0 12px;
+
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: var(--text);
+}
+
+.solution-card-content p {
+  margin: 0 0 22px;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* CARD LINK */
+
+.solution-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: auto;
+  padding-top: 6px;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+
+  color: var(--secondary);
+  text-decoration: none;
+
+  transition: gap var(--transition);
+}
+
+.solution-link:hover {
+  gap: 12px;
+  color: var(--primary);
+}
+
+.solution-link svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   HOME 1 — FIND THE RIGHT COVERAGE
+   ========================================= */
+
+.coverage-process {
+  width: 100%;
+  padding: 90px 0;
+
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+.coverage-process-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 224px);
+
+  margin: 0 auto;
+  padding: 0 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* SECTION HEADER */
+
+.coverage-process-header {
+  max-width: 760px;
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.coverage-process-title {
+  margin: 0 0 18px;
+
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+
+  color: var(--text);
+}
+
+.coverage-process-title span {
+  color: var(--secondary);
+}
+
+.coverage-process-description {
+  max-width: 680px;
+  margin: 0 auto;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* FOUR-STEP GRID */
+
+.coverage-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+/* INDIVIDUAL STEP */
+
+.coverage-step {
+  min-width: 0;
+  padding: 26px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.coverage-step:hover {
+  border-color: var(--secondary);
+  transform: translateY(-4px);
+  box-shadow: var(--header-shadow);
+}
+
+/* STEP ICON AND NUMBER */
+
+.coverage-step-top {
+  width: 100%;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.coverage-step-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface-hover);
+  color: var(--secondary);
+  border-radius: 9px;
+}
+
+.coverage-step-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.coverage-step-number {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+
+  color: var(--secondary);
+  opacity: 0.8;
+}
+
+/* STEP TEXT */
+
+.coverage-step h3 {
+  margin: 0 0 12px;
+
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: var(--text);
+}
+
+.coverage-step p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* BOTTOM CTA */
+
+.coverage-process-footer {
+  margin-top: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+
+  text-align: center;
+}
+
+.coverage-process-footer p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+.coverage-process-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--secondary);
+  text-decoration: none;
+
+  transition: gap var(--transition);
+}
+
+.coverage-process-link:hover {
+  gap: 12px;
+  color: var(--primary);
+}
+
+.coverage-process-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* =========================================
+   HOME 1 — SECTION 04
+   INSURANCE MADE UNDERSTANDABLE
+   ========================================= */
+
+.insurance-education {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.insurance-education-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+  position: relative;
+}
+
+/* CENTERED SECTION HEADER */
+
+.insurance-education-header {
+  max-width: 800px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.insurance-education-title {
+  margin: 0 0 18px;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  color: var(--text);
+}
+.insurance-education-title span {
+  color: var(--secondary);
+}
+
+.insurance-education-description {
+  max-width: 680px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* IMAGE LEFT + POINTS RIGHT */
+
+.insurance-education-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT IMAGE */
+
+.insurance-education-visual {
+  width: 100%;
+  min-width: 0;
+  height: 540px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--surface-hover);
+}
+
+.insurance-education-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* RIGHT CONTENT */
+
+.insurance-education-content {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* EDUCATIONAL POINTS */
+
+.education-point {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-point:first-child {
+  padding-top: 0;
+}
+
+.education-point-number {
+  padding-top: 2px;
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--secondary);
+}
+
+.education-point-content h3 {
+  margin: 0 0 9px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.education-point-content p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =========================================================
+   POLICYPath
+   SECTION 5: GUIDANCE BEYOND CHOOSING A PLAN
+   LIGHT MODE + DARK MODE + RTL + RESPONSIVE
+   ========================================================= */
+
+/* SECTION */
+
+.guidance-section {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* MAIN CONTAINER */
+
+.guidance-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   CENTERED SECTION HEADER
+   ========================================================= */
+
+.guidance-header {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.guidance-header .section-eyebrow {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guidance-title {
+  margin: 0 0 20px;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  text-align: center;
+}
+.guidance-title span {
+  color: var(--secondary);
+}
+
+.guidance-description {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN CONTENT GRID
+   LEFT: GUIDANCE POINTS
+   RIGHT: IMAGE
+   ========================================================= */
+
+.guidance-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.guidance-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* =========================================================
+   GUIDANCE LIST
+   ========================================================= */
+
+.guidance-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.guidance-item {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+
+.guidance-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--secondary);
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.guidance-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.8;
+}
+
+.guidance-item:hover .guidance-icon {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.guidance-item-content {
+  min-width: 0;
+}
+
+.guidance-item-content h3 {
+  margin: 2px 0 8px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.guidance-item-content p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.guidance-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.guidance-primary-btn {
+  min-height: 48px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--signup-bg);
+  border-radius: 6px;
+  background: var(--signup-bg);
+  color: var(--signup-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.guidance-primary-btn:hover {
+  background: var(--signup-hover);
+  border-color: var(--signup-hover);
+  transform: translateY(-2px);
+}
+
+.guidance-primary-btn svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.guidance-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: gap var(--transition);
+  border: 1px solid var(--primary);
+  background: transparent;
+  border-radius: 6px;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.guidance-secondary-link svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.guidance-secondary-link:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.guidance-visual {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: 560px;
+  border-radius: 12px;
+}
+
+.guidance-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* =========================================================
+   FLOATING IMAGE NOTE
+   ========================================================= */
+
+.guidance-image-note {
+  position: absolute;
+  left: -28px;
+  bottom: 32px;
+  width: max-content;
+  max-width: calc(100% + 10px);
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--header-shadow);
+}
+
+.guidance-note-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--surface-hover);
+  color: var(--secondary);
+}
+
+.guidance-note-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.guidance-note-content {
+  min-width: 0;
+}
+
+.guidance-image-note h3 {
+  margin: 0 0 5px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.guidance-image-note p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+   ========================================================= */
+
+.guidance-section a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   POLICYPath
+   SECTION 6: WHY CHOOSE POLICYPath?
+   LIGHT MODE + DARK MODE + RTL + RESPONSIVE
+   ========================================================= */
+
+/* SECTION */
+
+.why-policypath {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.why-policypath-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   CENTERED HEADER
+   ========================================================= */
+
+.why-policypath-header {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.why-policypath-header .section-eyebrow {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-policypath-title {
+  margin: 0 0 20px;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  text-align: center;
+}
+.why-policypath-title span {
+  color: var(--secondary);
+}
+
+.why-policypath-description {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =========================================================
+   BENEFIT GRID
+   ========================================================= */
+
+.why-policypath-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* =========================================================
+   BENEFIT CARD
+   ========================================================= */
+
+.why-policypath-card {
+  min-width: 0;
+  padding: 32px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--site-bg);
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.why-policypath-card:hover {
+  border-color: var(--secondary);
+  background: var(--surface);
+  transform: translateY(-5px);
+  box-shadow: var(--header-shadow);
+}
+
+/* ICON */
+
+.why-policypath-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--secondary);
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.why-policypath-card:hover .why-policypath-icon {
+  border-color: var(--secondary);
+  background: var(--surface-hover);
+}
+
+.why-policypath-icon svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 1.8;
+}
+
+/* CARD CONTENT */
+
+.why-policypath-card h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.why-policypath-card p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =========================================================
+   BOTTOM TRUST MESSAGE
+   ========================================================= */
+
+.why-policypath-footer {
+  max-width: 950px;
+  margin: 38px auto 0;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--site-bg);
+}
+
+.why-policypath-footer-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--surface-hover);
+  color: var(--secondary);
+}
+
+.why-policypath-footer-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.why-policypath-footer p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* =========================================================
+   POLICYPath
+   SECTION 7: PLAN FOR LIFE'S WHAT-IFS
+   CENTERED HEADER + IMAGE LEFT + CONTENT RIGHT + 4 CARDS
+   LIGHT MODE + DARK MODE + RTL + RESPONSIVE
+   ========================================================= */
+
+.life-planning-section {
+  width: 100%;
+  padding: 90px 0;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+.life-planning-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+/* =========================================================
+   CENTERED HEADER
+   ========================================================= */
+
+.life-planning-header {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.life-planning-header .section-eyebrow {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.life-planning-title {
+  margin: 0 0 20px;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  text-align: center;
+}
+.life-planning-title span {
+  color: var(--secondary);
+}
+
+.life-planning-description {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =========================================================
+   FEATURE: IMAGE LEFT + CONTENT RIGHT
+   ========================================================= */
+
+.life-planning-feature {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 65px;
+  margin-bottom: 65px;
+}
+
+/* IMAGE */
+
+.life-planning-visual {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.life-planning-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* IMAGE NOTE */
+
+.life-planning-image-note {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--header-shadow);
+}
+
+.life-planning-image-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--surface-hover);
+  color: var(--secondary);
+}
+
+.life-planning-image-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.life-planning-image-note h3 {
+  margin: 0 0 5px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.life-planning-image-note p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.life-planning-feature-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.life-planning-feature-label {
+  margin-bottom: 16px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: var(--secondary);
+}
+
+.life-planning-feature-content > h3 {
+  margin: 0 0 20px;
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.life-planning-feature-content > p {
+  margin: 0 0 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+/* FEATURE POINTS */
+
+.life-planning-feature-points {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.life-planning-feature-point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.life-planning-feature-point svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  color: var(--secondary);
+}
+
+/* FEATURE BUTTON */
+
+.life-planning-feature-btn {
+  min-height: 48px;
+  margin-top: 30px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--signup-bg);
+  border-radius: 6px;
+  background: var(--signup-bg);
+  color: var(--signup-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.life-planning-feature-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.life-planning-feature-btn:hover {
+  background: var(--signup-hover);
+  border-color: var(--signup-hover);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   FOUR BOTTOM CARDS
+   ========================================================= */
+
+.life-planning-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.life-planning-card {
+  min-width: 0;
+  padding: 25px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.life-planning-card:hover {
+  border-color: var(--secondary);
+  background: var(--surface);
+  transform: translateY(-4px);
+  box-shadow: var(--header-shadow);
+}
+
+/* CARD TOP */
+
+.life-planning-card-top {
+  width: 100%;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.life-planning-card-number {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.life-planning-card-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: var(--surface-hover);
+  color: var(--secondary);
+}
+
+.life-planning-card-icon svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 1.8;
+}
+
+/* CARD CONTENT */
+
+.life-planning-card-label {
+  margin-bottom: 10px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+  color: var(--secondary);
+}
+
+.life-planning-card h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.life-planning-card p {
+  margin: 0 0 22px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* CARD LINK */
+
+.life-planning-card-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: gap var(--transition);
+}
+
+.life-planning-card-link svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.life-planning-card-link:hover {
+  gap: 11px;
+  color: var(--secondary);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.life-planning-section a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   POLICYPath
+   SECTION 8: FINAL CTA
+   LIGHT MODE + DARK MODE + RTL + RESPONSIVE
+   ========================================================= */
+
+.home-final-cta {
+  width: 100%;
+  padding: 65px 0;
+  background: var(--site-bg);
+  color: var(--text);
+  margin-bottom: -30px;
+}
+
+.home-final-cta-container {
+  position: relative;
+  width: calc(100% - 110px);
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 55px 70px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  align-items: center;
+  gap: 45px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.home-final-cta-content {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.home-final-cta-content .section-eyebrow {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-final-cta-title {
+  max-width: 780px;
+  margin: 0 auto 18px;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+}
+.home-final-cta-title span {
+  color: var(--secondary);
+}
+
+.home-final-cta-description {
+  max-width: 680px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =========================================================
+   CTA BUTTONS
+   ========================================================= */
+
+.home-final-cta-actions {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.home-final-cta-primary,
+.home-final-cta-secondary {
+  min-height: 48px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.home-final-cta-primary {
+  border-color: var(--signup-bg);
+  background: var(--signup-bg);
+  color: var(--signup-text);
+}
+
+.home-final-cta-primary:hover {
+  border-color: var(--signup-hover);
+  background: var(--signup-hover);
+  transform: translateY(-2px);
+}
+
+.home-final-cta-secondary {
+  border-color: var(--primary);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.home-final-cta-secondary:hover {
+  border-color: var(--secondary);
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+}
+
+.home-final-cta-actions svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TRUST MESSAGE
+   ========================================================= */
+
+.home-final-cta-trust {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.home-final-cta-trust svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DECORATIVE SHIELD
+   ========================================================= */
+
+.home-final-cta-decoration {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-final-cta-shield {
+  position: relative;
+  z-index: 1;
+  width: 112px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--surface-hover);
+  color: var(--secondary);
+  transform: rotate(-8deg);
+}
+
+.home-final-cta-shield svg {
+  width: 60px;
+  height: 60px;
+  stroke-width: 1.4;
+  transform: rotate(8deg);
+}
+
+.home-final-cta-orbit {
+  position: absolute;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.home-final-cta-orbit-one {
+  width: 170px;
+  height: 170px;
+}
+
+.home-final-cta-orbit-two {
+  width: 215px;
+  height: 215px;
+  border-style: dashed;
+  opacity: 0.7;
+}
+
+/* ACCESSIBILITY */
+
+.home-final-cta a:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 4px;
+}
+
+/* =========================================
+   SAMSUNG GALAXY S8+ — MOBILE
+   ========================================= */
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  /* GLOBAL RESPONSIVE FIX */
+  .home-hero,
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section,
+  .home-final-cta {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .home-hero {
+    margin-top: 80px;
+  }
+
+  .home-hero-container,
+  .insurance-solutions-container,
+  .coverage-process-container,
+  .insurance-education-container,
+  .guidance-container,
+  .why-policypath-container,
+  .life-planning-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 38px 20px;
+  }
+
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section {
+    padding: 0;
+  }
+
+  /* HERO */
+  .home-hero-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  .home-hero-content,
+  .home-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-hero-eyebrow {
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    flex-wrap: wrap;
+  }
+
+  .eyebrow-line {
+    width: 22px;
+  }
+
+  .home-hero-title {
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    margin-bottom: 18px;
+  }
+
+  .hero-title-highlight {
+    margin-top: 5px;
+  }
+
+  .home-hero-description {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 22px;
+  }
+
+  .home-hero-actions {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .hero-btn {
+    min-height: 46px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .home-hero-trust {
+    max-width: 100%;
+    gap: 9px;
+  }
+
+  .home-hero-trust p {
+    font-size: 12px;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .hero-main-image {
+    width: 100%;
+    height: clamp(230px, 68vw, 330px);
+    object-fit: cover;
+  }
+
+  .hero-info-card {
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .hero-info-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-info-content h3 {
+    font-size: 14px;
+  }
+
+  .hero-info-content p {
+    font-size: 12px;
+  }
+
+  .hero-image-accent {
+    top: -8px;
+    right: -8px;
+    width: 70px;
+    height: 70px;
+  }
+
+  /* SHARED SECTION HEADINGS */
+  .solutions-title,
+  .coverage-process-title,
+  .insurance-education-title,
+  .guidance-title,
+  .why-policypath-title,
+  .life-planning-title,
+  .home-final-cta-title {
+    font-size: clamp(25px, 6.5vw, 30px);
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    overflow-wrap: anywhere;
+  }
+
+  .insurance-solutions-header,
+  .coverage-process-header,
+  .insurance-education-header,
+  .guidance-header,
+  .why-policypath-header,
+  .life-planning-header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .solutions-description,
+  .coverage-process-description,
+  .insurance-education-description,
+  .guidance-description,
+  .why-policypath-description,
+  .life-planning-description {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  /* INSURANCE SOLUTIONS */
+  .insurance-solutions-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .solution-card-content {
+    padding: 22px;
+  }
+
+  .solution-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .solution-card-content h3 {
+    font-size: 19px;
+  }
+
+  .solution-card-content p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  /* COVERAGE PROCESS */
+  .coverage-steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .coverage-step {
+    padding: 22px 20px;
+  }
+
+  .coverage-step-top {
+    margin-bottom: 18px;
+  }
+
+  .coverage-step h3 {
+    font-size: 18px;
+  }
+
+  .coverage-process-footer {
+    margin-top: 26px;
+    gap: 10px;
+  }
+
+  /* INSURANCE EDUCATION */
+  .insurance-education-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .insurance-education-visual {
+    height: 300px;
+  }
+
+  .education-point {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .education-point-number {
+    font-size: 19px;
+  }
+
+  .education-point-content h3 {
+    font-size: 18px;
+  }
+
+  .education-point-content p {
+    font-size: 13px;
+  }
+
+  /* GUIDANCE */
+  .guidance-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .guidance-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .guidance-list {
+    gap: 22px;
+  }
+
+  .guidance-item {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .guidance-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .guidance-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .guidance-item-content h3 {
+    font-size: 18px;
+  }
+
+  .guidance-item-content p {
+    font-size: 13px;
+  }
+
+  .guidance-actions {
+    gap: 12px;
+    margin-top: 26px;
+  }
+
+  .guidance-primary-btn,
+  .guidance-secondary-link {
+    min-height: 46px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .guidance-visual {
+    width: 100%;
+    height: 320px;
+  }
+
+  .guidance-image-note {
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .guidance-note-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .guidance-image-note h3 {
+    font-size: 14px;
+  }
+
+  .guidance-image-note p {
+    font-size: 12px;
+  }
+
+  /* WHY CHOOSE POLICYPath */
+  .why-policypath-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .why-policypath-card {
+    padding: 24px 20px;
+  }
+
+  .why-policypath-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 18px;
+  }
+
+  .why-policypath-card h3 {
+    font-size: 18px;
+  }
+
+  .why-policypath-footer {
+    margin-top: 24px;
+    padding: 18px 15px;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .why-policypath-footer-icon {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .why-policypath-footer p {
+    font-size: 13px;
+  }
+
+  /* LIFE PLANNING */
+  .life-planning-feature {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    margin-bottom: 35px;
+  }
+
+  .life-planning-visual {
+    width: 100%;
+    height: 300px;
+  }
+
+  .life-planning-image-note {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .life-planning-image-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .life-planning-image-note h3 {
+    font-size: 14px;
+  }
+
+  .life-planning-image-note p {
+    font-size: 12px;
+  }
+
+  .life-planning-feature-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .life-planning-feature-content > h3 {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .life-planning-feature-content > p {
+    font-size: 14px;
+  }
+
+  .life-planning-feature-point {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .life-planning-feature-btn {
+    margin-top: 22px;
+    min-height: 46px;
+    padding: 0 16px;
+  }
+
+  .life-planning-cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .life-planning-card {
+    padding: 22px 20px;
+  }
+
+  .life-planning-card h3 {
+    font-size: 18px;
+  }
+
+  /* FINAL CTA */
+  .home-final-cta {
+    padding: 38px 20px;
+  }
+
+  .home-final-cta-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 18px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    border-radius: 12px;
+  }
+
+  .home-final-cta-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .home-final-cta-description {
+    font-size: 14px;
+  }
+
+  .home-final-cta-actions {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .home-final-cta-primary,
+  .home-final-cta-secondary {
+    min-height: 46px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .home-final-cta-trust {
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .home-final-cta-decoration {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .home-final-cta-shield {
+    width: 82px;
+    height: 82px;
+    border-radius: 20px;
+  }
+
+  .home-final-cta-shield svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .home-final-cta-orbit-one {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-final-cta-orbit-two {
+    width: 148px;
+    height: 148px;
+  }
+}
+
+/* =========================================
+   IPAD MINI — 768px TO 820px
+   ========================================= */
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .home-hero,
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section,
+  .home-final-cta {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  .home-hero {
+    margin-top: 80px;
+  }
+
+  .home-hero-container,
+  .insurance-solutions-container,
+  .coverage-process-container,
+  .insurance-education-container,
+  .guidance-container,
+  .why-policypath-container,
+  .life-planning-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 48px 28px;
+  }
+
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section {
+    padding: 0;
+  }
+
+  /* HERO */
+  .home-hero-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+    align-items: start;
+  }
+
+  .home-hero-content,
+  .home-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-hero-title {
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    white-space: normal;
+  }
+
+  .home-hero-description {
+    max-width: 650px;
+    font-size: 16px;
+  }
+
+  .hero-image-wrapper {
+    min-height: 0;
+  }
+
+  .hero-main-image {
+    height: 400px;
+  }
+
+  .hero-info-card {
+    left: 20px;
+    bottom: 20px;
+    width: min(310px, calc(100% - 40px));
+  }
+
+  .hero-image-accent {
+    right: -8px;
+    top: -8px;
+  }
+
+  /* SECTION HEADINGS */
+  .solutions-title,
+  .coverage-process-title,
+  .insurance-education-title,
+  .guidance-title,
+  .why-policypath-title,
+  .life-planning-title,
+  .home-final-cta-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .insurance-solutions-header,
+  .coverage-process-header,
+  .insurance-education-header,
+  .guidance-header,
+  .why-policypath-header,
+  .life-planning-header {
+    max-width: 700px;
+    margin-bottom: 38px;
+  }
+
+  .solutions-description,
+  .coverage-process-description,
+  .insurance-education-description,
+  .guidance-description,
+  .why-policypath-description,
+  .life-planning-description {
+    font-size: 15px;
+  }
+
+  /* INSURANCE SOLUTIONS */
+  .insurance-solutions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .solution-card-content {
+    padding: 22px;
+  }
+
+  .solution-card-content h3 {
+    font-size: 19px;
+  }
+
+  /* COVERAGE PROCESS */
+  .coverage-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .coverage-step {
+    padding: 24px 20px;
+  }
+
+  .coverage-process-footer {
+    margin-top: 30px;
+  }
+
+  /* INSURANCE EDUCATION */
+  .insurance-education-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+  }
+
+  .insurance-education-visual {
+    height: 440px;
+  }
+
+  .education-point {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+    padding: 19px 0;
+  }
+
+  .education-point-content h3 {
+    font-size: 18px;
+  }
+
+  .education-point-content p {
+    font-size: 13px;
+  }
+
+  /* GUIDANCE */
+  .guidance-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .guidance-list {
+    gap: 22px;
+  }
+
+  .guidance-item {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .guidance-visual {
+    height: 420px;
+  }
+
+  .guidance-image-note {
+    left: 18px;
+    right: 18px;
+    width: auto;
+    max-width: none;
+  }
+
+  .guidance-actions {
+    gap: 14px;
+  }
+
+  /* WHY CHOOSE POLICYPath */
+  .why-policypath-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .why-policypath-card {
+    padding: 26px 22px;
+  }
+
+  .why-policypath-footer {
+    padding: 20px;
+  }
+
+  /* LIFE PLANNING */
+  .life-planning-feature {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+    margin-bottom: 45px;
+  }
+
+  .life-planning-visual {
+    height: 420px;
+  }
+
+  .life-planning-image-note {
+    left: 12px;
+    right: 12px;
+    padding: 13px;
+    gap: 10px;
+  }
+
+  .life-planning-feature-content > h3 {
+    font-size: 25px;
+  }
+
+  .life-planning-feature-content > p {
+    font-size: 14px;
+  }
+
+  .life-planning-feature-point {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .life-planning-feature-btn {
+    margin-top: 22px;
+  }
+
+  .life-planning-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .life-planning-card {
+    padding: 22px 20px;
+  }
+
+  /* FINAL CTA */
+  .home-final-cta {
+    padding: 48px 28px;
+  }
+
+  .home-final-cta-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 38px 28px;
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 20px;
+  }
+
+  .home-final-cta-decoration {
+    width: 145px;
+    height: 145px;
+  }
+
+  .home-final-cta-shield {
+    width: 90px;
+    height: 90px;
+  }
+
+  .home-final-cta-shield svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .home-final-cta-orbit-one {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-final-cta-orbit-two {
+    width: 145px;
+    height: 145px;
+  }
+}
+
+/* =========================================
+   IPAD PRO 11" — 821px TO 1024px
+   ========================================= */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .home-hero,
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section,
+  .home-final-cta {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  .home-hero {
+    margin-top: 84px;
+  }
+
+  .home-hero-container,
+  .insurance-solutions-container,
+  .coverage-process-container,
+  .insurance-education-container,
+  .guidance-container,
+  .why-policypath-container,
+  .life-planning-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 50px 32px;
+  }
+
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section {
+    padding: 0;
+  }
+
+  /* HERO */
+  .home-hero-container {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 30px;
+    align-items: center;
+  }
+
+  .home-hero-content,
+  .home-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-hero-title {
+    font-size: clamp(32px, 4vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.9px;
+    white-space: normal;
+  }
+
+  .home-hero-description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .home-hero-actions {
+    gap: 10px;
+  }
+
+  .hero-btn {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  .hero-image-wrapper {
+    min-height: 0;
+  }
+
+  .hero-main-image {
+    height: 400px;
+  }
+
+  .hero-info-card {
+    left: -10px;
+    bottom: 20px;
+    width: min(290px, 95%);
+    padding: 16px;
+  }
+
+  .hero-image-accent {
+    right: -8px;
+    top: -8px;
+    width: 95px;
+    height: 95px;
+  }
+
+  /* SECTION HEADINGS */
+  .solutions-title,
+  .coverage-process-title,
+  .insurance-education-title,
+  .guidance-title,
+  .why-policypath-title,
+  .life-planning-title,
+  .home-final-cta-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .insurance-solutions-header,
+  .coverage-process-header,
+  .insurance-education-header,
+  .guidance-header,
+  .why-policypath-header,
+  .life-planning-header {
+    margin-bottom: 40px;
+  }
+
+  .solutions-description,
+  .coverage-process-description,
+  .insurance-education-description,
+  .guidance-description,
+  .why-policypath-description,
+  .life-planning-description {
+    font-size: 15px;
+  }
+
+  /* INSURANCE SOLUTIONS */
+  .insurance-solutions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .solution-card-content {
+    padding: 24px;
+  }
+
+  /* COVERAGE PROCESS */
+  .coverage-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .coverage-step {
+    padding: 25px 22px;
+  }
+
+  /* INSURANCE EDUCATION */
+  .insurance-education-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 32px;
+  }
+
+  .insurance-education-visual {
+    height: 460px;
+  }
+
+  .education-point {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px 0;
+  }
+
+  .education-point-content h3 {
+    font-size: 19px;
+  }
+
+  /* GUIDANCE */
+  .guidance-layout {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 32px;
+  }
+
+  .guidance-list {
+    gap: 22px;
+  }
+
+  .guidance-item {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .guidance-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .guidance-item-content h3 {
+    font-size: 18px;
+  }
+
+  .guidance-item-content p {
+    font-size: 13px;
+  }
+
+  .guidance-actions {
+    gap: 12px;
+  }
+
+  .guidance-primary-btn,
+  .guidance-secondary-link {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  .guidance-visual {
+    height: 450px;
+  }
+
+  .guidance-image-note {
+    left: -8px;
+    right: 8px;
+    width: auto;
+    max-width: none;
+    padding: 14px;
+    gap: 10px;
+  }
+
+  /* WHY CHOOSE POLICYPath */
+  .why-policypath-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .why-policypath-card {
+    padding: 28px 24px;
+  }
+
+  .why-policypath-footer {
+    max-width: 850px;
+  }
+
+  /* LIFE PLANNING */
+  .life-planning-feature {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .life-planning-visual {
+    height: 440px;
+  }
+
+  .life-planning-image-note {
+    left: 12px;
+    right: 12px;
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .life-planning-feature-content > h3 {
+    font-size: 27px;
+  }
+
+  .life-planning-feature-content > p {
+    font-size: 14px;
+  }
+
+  .life-planning-feature-point {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .life-planning-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .life-planning-card {
+    padding: 24px 22px;
+  }
+
+  /* FINAL CTA */
+  .home-final-cta {
+    padding: 50px 32px;
+  }
+
+  .home-final-cta-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 30px;
+    grid-template-columns: minmax(0, 1fr) 170px;
+    gap: 24px;
+  }
+
+  .home-final-cta-decoration {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home-final-cta-shield {
+    width: 95px;
+    height: 95px;
+  }
+
+  .home-final-cta-shield svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-final-cta-orbit-one {
+    width: 130px;
+    height: 130px;
+  }
+
+  .home-final-cta-orbit-two {
+    width: 158px;
+    height: 158px;
+  }
+}
+
+/* =========================================
+   GOOGLE NEST HUB — 1024px × 600px
+   Keep this block AFTER the iPad Pro query.
+   ========================================= */
+@media screen and (width: 1024px) and (height: 600px) {
+  /* PREVENT SHORT-VIEWPORT CLIPPING */
+  .home-hero {
+    height: auto;
+    min-height: 0;
+    margin-top: 76px;
+    overflow: visible;
+  }
+
+  .home-hero-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 28px 32px;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 28px;
+    align-items: center;
+  }
+
+  .home-hero-content,
+  .home-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+    white-space: normal;
+    margin-bottom: 14px;
+  }
+
+  .home-hero-eyebrow {
+    margin-bottom: 14px;
+    font-size: 10px;
+    gap: 8px;
+  }
+
+  .home-hero-description {
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .home-hero-actions {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .hero-btn {
+    min-height: 42px;
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .home-hero-trust p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .hero-image-wrapper {
+    min-height: 0;
+  }
+
+  .hero-main-image {
+    height: 300px;
+  }
+
+  .hero-info-card {
+    left: -8px;
+    bottom: 12px;
+    width: min(280px, 95%);
+    padding: 13px;
+    gap: 10px;
+  }
+
+  .hero-info-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-info-content h3 {
+    font-size: 14px;
+  }
+
+  .hero-info-content p {
+    font-size: 12px;
+  }
+
+  .hero-image-accent {
+    top: -8px;
+    right: -8px;
+    width: 75px;
+    height: 75px;
+  }
+
+  /* REDUCE SECTION SPACING */
+  .insurance-solutions,
+  .coverage-process,
+  .insurance-education,
+  .guidance-section,
+  .why-policypath,
+  .life-planning-section {
+    padding: 0;
+  }
+
+  .insurance-solutions-container,
+  .coverage-process-container,
+  .insurance-education-container,
+  .guidance-container,
+  .why-policypath-container,
+  .life-planning-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    padding: 36px 32px;
+  }
+
+  .solutions-title,
+  .coverage-process-title,
+  .insurance-education-title,
+  .guidance-title,
+  .why-policypath-title,
+  .life-planning-title,
+  .home-final-cta-title {
+    font-size: 29px;
+    line-height: 1.25;
+  }
+
+  .insurance-solutions-header,
+  .coverage-process-header,
+  .insurance-education-header,
+  .guidance-header,
+  .why-policypath-header,
+  .life-planning-header {
+    margin-bottom: 28px;
+  }
+
+  .solutions-description,
+  .coverage-process-description,
+  .insurance-education-description,
+  .guidance-description,
+  .why-policypath-description,
+  .life-planning-description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* INSURANCE SOLUTIONS */
+  .insurance-solutions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .solution-card-content {
+    padding: 20px;
+  }
+
+  /* COVERAGE PROCESS */
+  .coverage-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .coverage-step {
+    padding: 22px 20px;
+  }
+
+  /* INSURANCE EDUCATION */
+  .insurance-education-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+  }
+
+  .insurance-education-visual {
+    height: 350px;
+  }
+
+  .education-point {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .education-point-content h3 {
+    font-size: 17px;
+  }
+
+  .education-point-content p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  /* GUIDANCE */
+  .guidance-layout {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 28px;
+  }
+
+  .guidance-list {
+    gap: 18px;
+  }
+
+  .guidance-item {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .guidance-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .guidance-item-content h3 {
+    font-size: 17px;
+  }
+
+  .guidance-item-content p {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .guidance-actions {
+    margin-top: 22px;
+    gap: 10px;
+  }
+
+  .guidance-primary-btn,
+  .guidance-secondary-link {
+    min-height: 42px;
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .guidance-visual {
+    height: 350px;
+  }
+
+  .guidance-image-note {
+    left: 8px;
+    right: 8px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .guidance-note-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  /* WHY CHOOSE POLICYPath */
+  .why-policypath-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .why-policypath-card {
+    padding: 24px 22px;
+  }
+
+  .why-policypath-icon {
+    margin-bottom: 18px;
+  }
+
+  .why-policypath-card h3 {
+    font-size: 18px;
+  }
+
+  .why-policypath-footer {
+    margin-top: 26px;
+    padding: 18px 22px;
+  }
+
+  /* LIFE PLANNING */
+  .life-planning-feature {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 28px;
+    margin-bottom: 35px;
+  }
+
+  .life-planning-visual {
+    height: 350px;
+  }
+
+  .life-planning-image-note {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .life-planning-feature-content > h3 {
+    font-size: 25px;
+  }
+
+  .life-planning-feature-content > p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .life-planning-feature-points {
+    gap: 10px;
+  }
+
+  .life-planning-feature-point {
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .life-planning-feature-btn {
+    min-height: 42px;
+    margin-top: 18px;
+    padding: 0 16px;
+  }
+
+  .life-planning-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .life-planning-card {
+    padding: 22px 20px;
+  }
+
+  /* FINAL CTA */
+  .home-final-cta {
+    padding: 36px 32px;
+  }
+
+  .home-final-cta-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+    grid-template-columns: minmax(0, 1fr) 150px;
+    gap: 20px;
+  }
+
+  .home-final-cta-actions {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .home-final-cta-primary,
+  .home-final-cta-secondary {
+    min-height: 42px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .home-final-cta-trust {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .home-final-cta-decoration {
+    width: 140px;
+    height: 140px;
+  }
+
+  .home-final-cta-shield {
+    width: 85px;
+    height: 85px;
+  }
+
+  .home-final-cta-shield svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .home-final-cta-orbit-one {
+    width: 115px;
+    height: 115px;
+  }
+
+  .home-final-cta-orbit-two {
+    width: 138px;
+    height: 138px;
+  }
+}

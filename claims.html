@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dark-logo.png" />
+
+    <title>Claims Assistance</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="claims.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- ================= POLICYPATH HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" aria-label="PolicyPath Home">
+            <img
+              class="logo-light"
+              src="images/light-logo.png"
+              alt="PolicyPath Logo"
+            />
+
+            <img
+              class="logo-dark"
+              src="images/dark-logo.png"
+              alt="PolicyPath Logo"
+            />
+          </a>
+
+          <div class="logo-text">
+            <a href="index.html" class="brand-title">
+              Policy<span class="era">Path</span>
+            </a>
+            <p>Insurance, Made Clear.</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="primaryNavbar">
+          <ul class="nav-links">
+            <!-- Home Dropdown -->
+            <li class="dropdown">
+              <a href="index.html">
+                Home
+                <i data-lucide="chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house"></i>
+                    Home 1 — Classic
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles"></i>
+                    Home 2 — Premium
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="claims.html" class="active">Claims Assistance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <!-- Mobile Sign Up Button -->
+          <div class="mobile-book">
+            <a href="login.html" class="book-btn">
+              Login
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-buttons">
+          <!-- RTL Toggle -->
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL mode"
+            title="RTL Mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Dark Mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- Desktop Sign Up -->
+          <a href="login.html" class="book-btn desktop-book">
+           Login
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="claims-hero" id="claims-hero">
+      <div class="claims-hero__overlay"></div>
+
+      <div class="claims-hero__content">
+        <span class="section-eyebrow"> Claims Assistance </span>
+
+        <h1>
+          We're Here When<br class="desktop-break" />
+          <span>You Need Us</span>
+        </h1>
+
+        <p class="claims-hero__description">
+          A simpler, clearer and more supportive claims process to help you move
+          forward with confidence.
+        </p>
+
+        <div class="claims-hero__actions">
+          <a href="#claim-types" class="claims-btn claims-btn--primary">
+            Start a Claim
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a href="#track-claim" class="claims-btn claims-btn--outline">
+            Track a Claim
+            <i data-lucide="search"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+     POLICYPATH — CLAIMS ASSISTANCE
+     SECTION 02: CHOOSE YOUR CLAIM TYPE
+======================================================= -->
+
+    <section class="claims-types" id="claim-types">
+      <div class="claims-types__container">
+        <!-- LEFT COLUMN: SECTION INTRODUCTION -->
+        <div class="claims-types__header">
+          <span class="section-eyebrow"> CLAIMS ASSISTANCE </span>
+
+          <h2>How Can We <span>Help You Today?</span></h2>
+
+          <p class="claims-types__description">
+            Every claim has its own journey. Find the guidance you need to
+            understand the process, prepare your documents, and take the next
+            step with confidence.
+          </p>
+
+          <a href="#claims-process" class="claims-types__help-link">
+            Understand the claims process
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT COLUMN: CLAIM TYPE CARDS -->
+        <div class="claims-types__grid">
+          <!-- HEALTH CLAIMS -->
+          <article class="claim-type-card">
+            <div class="claim-type-card__top">
+              <div class="claim-type-card__icon">
+                <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              </div>
+
+              <span class="claim-type-card__number">01</span>
+            </div>
+
+            <h3>Health Claims</h3>
+
+            <p>
+              Get guidance for hospitalization, cashless treatment, medical
+              expenses, and reimbursement claims.
+            </p>
+
+            <a
+              href="#claims-process"
+              class="claim-type-card__link"
+              aria-label="Explore health claims assistance"
+            >
+              <span>Explore Claims</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- LIFE CLAIMS -->
+          <article class="claim-type-card">
+            <div class="claim-type-card__top">
+              <div class="claim-type-card__icon">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+              </div>
+
+              <span class="claim-type-card__number">02</span>
+            </div>
+
+            <h3>Life Claims</h3>
+
+            <p>
+              Understand beneficiary requirements, supporting documents, and
+              life insurance claim procedures.
+            </p>
+
+            <a
+              href="#claims-process"
+              class="claim-type-card__link"
+              aria-label="Explore life claims assistance"
+            >
+              <span>Explore Claims</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- MOTOR CLAIMS -->
+          <article class="claim-type-card">
+            <div class="claim-type-card__top">
+              <div class="claim-type-card__icon">
+                <i data-lucide="car-front" aria-hidden="true"></i>
+              </div>
+
+              <span class="claim-type-card__number">03</span>
+            </div>
+
+            <h3>Motor Claims</h3>
+
+            <p>
+              Find guidance for vehicle accidents, damage assessment, repair
+              procedures, and claim documentation.
+            </p>
+
+            <a
+              href="#claims-process"
+              class="claim-type-card__link"
+              aria-label="Explore motor claims assistance"
+            >
+              <span>Explore Claims</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- PROPERTY CLAIMS -->
+          <article class="claim-type-card">
+            <div class="claim-type-card__top">
+              <div class="claim-type-card__icon">
+                <i data-lucide="house" aria-hidden="true"></i>
+              </div>
+
+              <span class="claim-type-card__number">04</span>
+            </div>
+
+            <h3>Property Claims</h3>
+
+            <p>
+              Learn about property damage, loss assessment, evidence collection,
+              and supporting documents.
+            </p>
+
+            <a
+              href="#claims-process"
+              class="claim-type-card__link"
+              aria-label="Explore property claims assistance"
+            >
+              <span>Explore Claims</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+     POLICYPATH — CLAIMS ASSISTANCE
+     SECTION 03: HOW THE CLAIMS PROCESS WORKS
+======================================================= -->
+
+    <section class="claims-process" id="claims-process">
+      <!-- CENTERED SECTION HEADING -->
+      <div class="claims-process__heading">
+        <span class="section-eyebrow"> YOUR CLAIMS JOURNEY </span>
+
+        <h2>How the Claims <span>Process Works</span></h2>
+
+        <p>
+          From the first notification to the final decision, understand each
+          step of your claims journey.
+        </p>
+      </div>
+
+      <!-- SHARED SECTION CONTAINER -->
+      <div class="claims-process__container">
+        <!-- LEFT: IMAGE -->
+        <div class="claims-process__visual">
+          <img
+            src="images/claim.png"
+            alt="Insurance professional reviewing claim documents"
+            class="claims-process__image"
+            loading="lazy"
+          />
+
+          <div class="claims-process__image-caption">
+            <span class="claims-process__caption-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </span>
+
+            <div>
+              <h3>Guidance at Every Step</h3>
+              <p>Know what to expect throughout your claim.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: PROCESS STEPS -->
+        <div class="claims-process__content">
+          <!-- STEP 01 -->
+          <article class="claims-process__step">
+            <div class="claims-process__step-number">01</div>
+
+            <div class="claims-process__step-content">
+              <h3>Report Your Claim</h3>
+
+              <p>
+                Notify your insurance provider and share the essential details
+                of the incident or loss.
+              </p>
+            </div>
+
+            <i
+              data-lucide="file-plus-2"
+              class="claims-process__step-icon"
+              aria-hidden="true"
+            ></i>
+          </article>
+
+          <!-- STEP 02 -->
+          <article class="claims-process__step">
+            <div class="claims-process__step-number">02</div>
+
+            <div class="claims-process__step-content">
+              <h3>Submit Required Documents</h3>
+
+              <p>
+                Provide the forms, supporting documents, and evidence requested
+                by your insurer.
+              </p>
+            </div>
+
+            <i
+              data-lucide="files"
+              class="claims-process__step-icon"
+              aria-hidden="true"
+            ></i>
+          </article>
+
+          <!-- STEP 03 -->
+          <article class="claims-process__step">
+            <div class="claims-process__step-number">03</div>
+
+            <div class="claims-process__step-content">
+              <h3>Review and Assessment</h3>
+
+              <p>
+                Your insurer evaluates the information and may request further
+                details or verification.
+              </p>
+            </div>
+
+            <i
+              data-lucide="clipboard-check"
+              class="claims-process__step-icon"
+              aria-hidden="true"
+            ></i>
+          </article>
+
+          <!-- STEP 04 -->
+          <article class="claims-process__step">
+            <div class="claims-process__step-number">04</div>
+
+            <div class="claims-process__step-content">
+              <h3>Decision and Settlement</h3>
+
+              <p>
+                Receive the claim decision and any applicable settlement details
+                or next-step instructions.
+              </p>
+            </div>
+
+            <i
+              data-lucide="check-circle-2"
+              class="claims-process__step-icon"
+              aria-hidden="true"
+            ></i>
+          </article>
+
+          <!-- SUPPORT NOTE -->
+          <div class="claims-process__note">
+            <i data-lucide="info" aria-hidden="true"></i>
+
+            <p>
+              Processes and timelines vary according to your insurer, policy
+              terms, and claim type.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DOCUMENTS YOU MAY NEED -->
+    <section class="claims-documents" id="claims-documents">
+      <div class="claims-documents__container">
+        <!-- Section Heading -->
+        <div class="claims-documents__heading">
+          <span class="section-eyebrow"> PREPARE WITH CONFIDENCE </span>
+
+          <h2>Documents You <span>May Need</span></h2>
+
+          <p>
+            Having the right documents ready can help make your claims
+            experience smoother. Requirements vary by claim type and insurance
+            provider.
+          </p>
+        </div>
+
+        <!-- Document Cards -->
+        <div class="claims-documents__grid">
+          <!-- Health -->
+          <article class="claims-document-card">
+            <div class="claims-document-card__icon">
+              <i data-lucide="heart-pulse" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-document-card__number">01</span>
+
+            <h3>Health Claim</h3>
+
+            <p>
+              Keep relevant medical and hospitalization records ready for your
+              insurer.
+            </p>
+
+            <ul>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Medical bills and receipts
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Discharge summary and reports
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Policy and identity details
+              </li>
+            </ul>
+
+            <a href="contact.html" class="claims-document-card__link">
+              Health claim details
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Life -->
+          <article class="claims-document-card">
+            <div class="claims-document-card__icon">
+              <i data-lucide="heart-handshake" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-document-card__number">02</span>
+
+            <h3>Life Claim</h3>
+
+            <p>
+              Beneficiaries may need to provide policy information and
+              supporting records.
+            </p>
+
+            <ul>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Policy documents
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Claimant identity details
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Death certificate, when applicable
+              </li>
+            </ul>
+
+            <a href="contact.html" class="claims-document-card__link">
+              Life claim details
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Motor -->
+          <article class="claims-document-card">
+            <div class="claims-document-card__icon">
+              <i data-lucide="car-front" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-document-card__number">03</span>
+
+            <h3>Motor Claim</h3>
+
+            <p>
+              Collect the vehicle, incident, and damage details requested by
+              your insurer.
+            </p>
+
+            <ul>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Driving licence and vehicle RC
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Policy details and incident photos
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                FIR, where required
+              </li>
+            </ul>
+
+            <a href="contact.html" class="claims-document-card__link">
+              Motor claim details
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Property -->
+          <article class="claims-document-card">
+            <div class="claims-document-card__icon">
+              <i data-lucide="house" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-document-card__number">04</span>
+
+            <h3>Property Claim</h3>
+
+            <p>
+              Document the damage or loss and retain relevant ownership and
+              expense records.
+            </p>
+
+            <ul>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Property and policy details
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Photos or videos of the damage
+              </li>
+              <li>
+                <i data-lucide="file-check" aria-hidden="true"></i>
+                Repair estimates and invoices
+              </li>
+            </ul>
+
+            <a href="contact.html" class="claims-document-card__link">
+              Property claim details
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+
+        <!-- Note -->
+        <div class="claims-documents__note">
+          <i data-lucide="info" aria-hidden="true"></i>
+
+          <p>
+            This is a general checklist, not a complete document list. Your
+            insurer may request additional documents depending on your policy
+            and circumstances.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- =====================================================
+     SECTION 5: CLAIMS SUPPORT TIMELINE
+===================================================== -->
+
+    <section class="claims-timeline" id="claims-timeline">
+      <div class="claims-timeline__container">
+        <!-- Section Heading -->
+        <div class="claims-timeline__heading">
+          <span class="section-eyebrow"> YOUR CLAIMS JOURNEY </span>
+
+          <h2>From Claim to <span>Resolution</span></h2>
+
+          <p>
+            Understand each stage of your insurance claim, from reporting the
+            incident to receiving your insurer's decision.
+          </p>
+        </div>
+
+        <!-- Horizontal Timeline -->
+        <div class="claims-timeline__track">
+          <!-- Step 1 -->
+          <article class="claims-timeline__step">
+            <div class="claims-timeline__marker">
+              <i data-lucide="file-plus-2" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-timeline__number">STEP 01</span>
+
+            <h3>Report Your Claim First</h3>
+
+            <p>
+              Notify your insurance provider about the incident and obtain a
+              claim reference number.
+            </p>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="claims-timeline__step">
+            <div class="claims-timeline__marker">
+              <i data-lucide="files" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-timeline__number">STEP 02</span>
+
+            <h3>Submit Documents Required</h3>
+
+            <p>
+              Complete the required forms and submit the supporting documents
+              requested by your insurer.
+            </p>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="claims-timeline__step">
+            <div class="claims-timeline__marker">
+              <i data-lucide="clipboard-check" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-timeline__number">STEP 03</span>
+
+            <h3>Review & Assessment</h3>
+
+            <p>
+              Your insurer reviews the information and may request additional
+              details or arrange an assessment.
+            </p>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="claims-timeline__step">
+            <div class="claims-timeline__marker">
+              <i data-lucide="check-circle-2" aria-hidden="true"></i>
+            </div>
+
+            <span class="claims-timeline__number">STEP 04</span>
+
+            <h3>Decision & Settlement</h3>
+
+            <p>
+              Your insurer communicates its decision and explains the next steps
+              according to your policy.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 6: FINAL CLAIMS CTA -->
+    <section class="claims-final-cta" id="claims-help">
+      <div class="claims-final-cta__container">
+        <div class="claims-final-cta__content">
+          <span class="section-eyebrow"> WE'RE HERE TO HELP </span>
+
+          <h2>Need Help With <span>Your Claim?</span></h2>
+
+          <p>
+            Questions about the claims process or the documents you need? Our
+            team can help you understand the next steps and guide you toward the
+            right support.
+          </p>
+
+          <div class="claims-final-cta__actions">
+            <a href="contact.html" class="claims-final-cta__button">
+              Contact Our Team
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="#claims-timeline" class="claims-final-cta__secondary">
+              Review the Claims Process
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="claims-final-cta__visual" aria-hidden="true">
+          <div class="claims-final-cta__icon-wrap">
+            <i data-lucide="handshake" aria-hidden="true"></i>
+          </div>
+
+          <div
+            class="claims-final-cta__decor claims-final-cta__decor--one"
+          ></div>
+          <div
+            class="claims-final-cta__decor claims-final-cta__decor--two"
+          ></div>
+        </div>
+      </div>
+    </section>
+<!-- ================= POLICYPATH FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Brand Column -->
+    <div class="footer-col footer-brand">
+
+      <div class="footer-logo">
+        <a href="index.html" aria-label="PolicyPath Home">
+          <img
+            class="logo-light"
+            src="images/light-logo.png"
+            alt="PolicyPath Logo"
+          >
+
+          <img
+            class="logo-dark"
+            src="images/dark-logo.png"
+            alt="PolicyPath Logo"
+          >
+        </a>
+
+        <div class="footer-branding">
+          <a href="index.html" class="brand-title">
+            Policy<span class="era">Path</span>
+          </a>
+          <p>Insurance, Made Clear.</p>
+        </div>
+      </div>
+
+      <p class="footer-about">
+        Explore life and health insurance with greater clarity.
+        Understand your options and navigate your insurance
+        journey with confidence.
+      </p>
+
+      <!-- Social Media -->
+    <div class="social-media">
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <i data-lucide="camera" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <i data-lucide="users" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Pinterest" title="Pinterest">
+          <i data-lucide="pin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto:hello@vintageera.com" aria-label="Email" title="Email">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="plans.html">Insurance Plans</a></li>
+        <li><a href="claims.html">Claims Assistance</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance Plans -->
+    <div class="footer-col">
+      <h3>Insurance Plans</h3>
+
+      <ul>
+        <li><a href="plans.html">Term Life Insurance</a></li>
+        <li><a href="plans.html">Whole Life Insurance</a></li>
+        <li><a href="plans.html">Individual Health</a></li>
+        <li><a href="plans.html">Family Health</a></li>
+        <li><a href="plans.html">Senior Health</a></li>
+        <li><a href="plans.html">Compare Plans</a></li>
+      </ul>
+    </div>
+
+    <!-- Claims Support -->
+    <div class="footer-col">
+      <h3>Claims Support</h3>
+
+      <ul>
+        <li><a href="claims.html">Claims Process</a></li>
+        <li><a href="claims.html">Required Documents</a></li>
+        <li><a href="claims.html">Life Insurance Claims</a></li>
+        <li><a href="claims.html">Health Insurance Claims</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="comming.html">Comming Soon....</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+
+      <ul>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>India</span>
+        </li>
+
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="contact.html">90909 09090</a>
+        </li>
+
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@policypath.com">
+            hello@policypath.com
+          </a>
+        </li>
+
+        <li>
+          <i data-lucide="clock"></i>
+          <span>Monday – Saturday</span>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="footer-book-btn">
+        Talk to an Advisor
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+
+    <p>
+      © <span id="copyrightYear">2026</span>
+      <span class="footer-brand-name">Policy<span class="path">Path</span></span>.
+      All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="cookies.html">Cookies</a>
+
+      <a href="#top" class="top-btn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+    <script src="global.js"></script>
+    <script src="claims.js"></script>
+  </body>
+</html>

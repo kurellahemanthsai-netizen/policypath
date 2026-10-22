@@ -1,0 +1,1323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dark-logo.png" />
+
+    <title>Home</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="home2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- ================= POLICYPATH HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" aria-label="PolicyPath Home">
+            <img
+              class="logo-light"
+              src="images/light-logo.png"
+              alt="PolicyPath Logo"
+            />
+
+            <img
+              class="logo-dark"
+              src="images/dark-logo.png"
+              alt="PolicyPath Logo"
+            />
+          </a>
+
+          <div class="logo-text">
+            <a href="index.html" class="brand-title">
+              Policy<span class="era">Path</span>
+            </a>
+            <p>Insurance, Made Clear.</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="primaryNavbar">
+          <ul class="nav-links">
+            <!-- Home Dropdown -->
+            <li class="dropdown">
+              <a href="index.html" class="active">
+                Home
+                <i data-lucide="chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house"></i>
+                    Home 1 — Classic
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html" class="active">
+                    <i data-lucide="sparkles"></i>
+                    Home 2 — Premium
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="claims.html">Claims Assistance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <!-- Mobile Sign Up Button -->
+          <div class="mobile-book">
+            <a href="login.html" class="book-btn">
+              Login
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-buttons">
+          <!-- RTL Toggle -->
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL mode"
+            title="RTL Mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Dark Mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- Desktop Sign Up -->
+          <a href="login.html" class="book-btn desktop-book">
+            Login
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     POLICYPath HOME 2 — PREMIUM HERO
+     ===================================================== -->
+
+    <section class="premium-hero" id="premium-home">
+      <div class="premium-hero-background" aria-hidden="true"></div>
+      <div class="premium-hero-overlay" aria-hidden="true"></div>
+      <div
+        class="premium-hero-glow premium-hero-glow-one"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="premium-hero-glow premium-hero-glow-two"
+        aria-hidden="true"
+      ></div>
+
+      <div class="premium-hero-container">
+        <!-- LEFT CONTENT -->
+        <div class="premium-hero-content">
+          <span class="section-eyebrow premium-hero-eyebrow">
+            Insurance, Made Simple
+          </span>
+
+          <h1 class="premium-hero-title">
+            Insurance Choices,
+            <span>Made Clear.</span>
+          </h1>
+
+          <p class="premium-hero-description">
+            Compare insurance plans, understand what matters, and find
+            protection that fits your life — with clear information and guidance
+            at every step.
+          </p>
+
+          <!-- CTA BUTTONS -->
+          <div class="premium-hero-actions">
+            <a href="plans.html" class="premium-hero-primary">
+              Compare Insurance Plans
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="contact.html" class="premium-hero-secondary">
+              Talk to Our Team
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- TRUST MESSAGE -->
+          <div class="premium-hero-trust">
+            <span class="premium-hero-trust-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </span>
+
+            <div>
+              <strong>Clarity at Every Step</strong>
+              <p>Understand your options. Decide with confidence.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT VISUAL -->
+        <div class="premium-hero-visual">
+          <!-- MAIN IMAGE -->
+          <div class="premium-hero-image-frame">
+            <img
+              src="images/hero-2.png"
+              alt="A family discussing insurance options with a professional advisor"
+              fetchpriority="high"
+            />
+          </div>
+
+          <!-- FLOATING CARD 1 -->
+          <div class="premium-float-card premium-float-card-top">
+            <span class="premium-float-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </span>
+
+            <div>
+              <strong>Life Insurance</strong>
+              <p>Protection for what matters</p>
+            </div>
+          </div>
+
+          <!-- FLOATING CARD 2 -->
+          <div class="premium-float-card premium-float-card-middle">
+            <span class="premium-float-icon">
+              <i data-lucide="heart-pulse" aria-hidden="true"></i>
+            </span>
+
+            <div>
+              <strong>Health Insurance</strong>
+              <p>Plan for healthcare needs</p>
+            </div>
+          </div>
+
+          <!-- FLOATING CARD 3 -->
+          <div class="premium-float-card premium-float-card-bottom">
+            <span class="premium-float-icon">
+              <i data-lucide="git-compare" aria-hidden="true"></i>
+            </span>
+
+            <div>
+              <strong>Compare Plans</strong>
+              <p>Explore options with clarity</p>
+            </div>
+          </div>
+
+          <!-- DECORATIVE ORBIT -->
+          <span
+            class="premium-hero-orbit premium-hero-orbit-one"
+            aria-hidden="true"
+          ></span>
+
+          <span
+            class="premium-hero-orbit premium-hero-orbit-two"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <!-- BOTTOM BENEFIT STRIP -->
+        <div class="premium-hero-benefits">
+          <div class="premium-benefit">
+            <span class="premium-benefit-icon">
+              <i data-lucide="scale" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h3>Compare Options</h3>
+              <p>Review benefits and costs</p>
+            </div>
+          </div>
+
+          <div class="premium-benefit">
+            <span class="premium-benefit-icon">
+              <i data-lucide="file-check-2" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h3>Understand Details</h3>
+              <p>Know what matters</p>
+            </div>
+          </div>
+
+          <div class="premium-benefit">
+            <span class="premium-benefit-icon">
+              <i data-lucide="messages-square" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h3>Expert Guidance</h3>
+              <p>Get help when needed</p>
+            </div>
+          </div>
+
+          <div class="premium-benefit">
+            <span class="premium-benefit-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h3>Confident Decisions</h3>
+              <p>Choose with clarity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICY PATH — HOME 2
+     SECTION 2: ASYMMETRICAL BENTO GRID
+     ===================================================== -->
+
+    <section class="premium-coverage-section" id="coverage-priorities">
+      <div class="premium-coverage-container">
+        <!-- SECTION HEADER -->
+        <header class="premium-coverage-header">
+          <span class="section-eyebrow"> EXPLORE YOUR OPTIONS </span>
+
+          <h2 class="premium-coverage-title">
+            Protection for
+            <span>What Matters Most.</span>
+          </h2>
+
+          <p class="premium-coverage-description">
+            Every person has different priorities. Explore insurance options
+            that help you prepare for life's uncertainties with greater clarity
+            and confidence.
+          </p>
+        </header>
+
+        <!-- BENTO GRID -->
+        <div class="premium-coverage-grid">
+          <!-- FEATURED HEALTH INSURANCE PANEL -->
+          <article class="premium-coverage-card premium-coverage-card-featured">
+            <div class="premium-coverage-image">
+              <img
+                src="images/health.jpeg"
+                alt="Healthcare professional discussing care with a patient"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="premium-coverage-featured-overlay"></div>
+
+            <div class="premium-coverage-featured-content">
+              <div class="premium-coverage-card-top">
+                <div class="premium-coverage-icon">
+                  <i data-lucide="shield-check"></i>
+                </div>
+
+                <span class="premium-coverage-number">01 / 03</span>
+              </div>
+
+              <span class="premium-coverage-card-label">
+                HEALTH & WELLBEING
+              </span>
+
+              <h3>Health Insurance</h3>
+
+              <p>
+                Explore plans that can help manage eligible medical expenses and
+                support your healthcare needs.
+              </p>
+
+              <a href="plans.html" class="premium-coverage-link">
+                Explore health coverage
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- RIGHT COLUMN -->
+          <div class="premium-coverage-side">
+            <!-- LIFE INSURANCE -->
+            <article class="premium-coverage-card premium-coverage-card-life">
+              <div class="premium-coverage-side-content">
+                <div class="premium-coverage-card-top">
+                  <div class="premium-coverage-icon">
+                    <i data-lucide="heart-handshake"></i>
+                  </div>
+
+                  <span class="premium-coverage-number">02</span>
+                </div>
+
+                <div class="premium-coverage-side-copy">
+                  <span class="premium-coverage-card-label">
+                    PLAN FOR TOMORROW
+                  </span>
+
+                  <h3>Life Insurance</h3>
+
+                  <p>
+                    Consider financial protection for the people who depend on
+                    you.
+                  </p>
+
+                  <a href="plans.html" class="premium-coverage-link">
+                    Explore life coverage
+                    <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="premium-coverage-side-image">
+                <img
+                  src="images/life.jpeg"
+                  alt="Family spending time together at home"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+
+            <!-- FAMILY PROTECTION -->
+            <article class="premium-coverage-card premium-coverage-card-family">
+              <div class="premium-coverage-side-content">
+                <div class="premium-coverage-card-top">
+                  <div class="premium-coverage-icon">
+                    <i data-lucide="users"></i>
+                  </div>
+
+                  <span class="premium-coverage-number">03</span>
+                </div>
+
+                <div class="premium-coverage-side-copy">
+                  <span class="premium-coverage-card-label">
+                    TOGETHER, BETTER PREPARED
+                  </span>
+
+                  <h3>Family Protection</h3>
+
+                  <p>
+                    Explore coverage options around your family's changing needs
+                    and responsibilities.
+                  </p>
+
+                  <a href="plans.html" class="premium-coverage-link">
+                    Explore family coverage
+                    <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="premium-coverage-side-image">
+                <img
+                  src="images/family.jpeg"
+                  alt="Parents and children enjoying time together outdoors"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- SECTION FOOTNOTE -->
+        <div class="premium-coverage-note">
+          <i data-lucide="info"></i>
+
+          <p>
+            Coverage, benefits, exclusions and eligibility vary by policy.
+            Review the policy terms before making a decision.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICY PATH — HOME 2
+     SECTION 3: COMPARE PLANS SIDE BY SIDE
+     ===================================================== -->
+
+    <section class="premium-compare-section" id="compare-plans">
+      <div class="premium-compare-container">
+        <!-- SECTION HEADER -->
+        <header class="premium-compare-header">
+          <span class="section-eyebrow"> MAKE AN INFORMED CHOICE </span>
+
+          <h2 class="premium-compare-title">
+            Compare With <span>Confidence</span>
+          </h2>
+
+          <p class="premium-compare-description">
+            A policy is more than its price. Understand the coverage, benefits,
+            conditions, and exclusions before deciding what works for you.
+          </p>
+        </header>
+
+        <!-- MAIN COMPARISON LAYOUT -->
+        <div class="premium-compare-layout">
+          <!-- LEFT: FEATURE INTRODUCTION -->
+          <div class="premium-compare-intro">
+            <div class="premium-compare-intro-top">
+              <div class="premium-compare-intro-icon">
+                <i data-lucide="scale"></i>
+              </div>
+
+              <span class="premium-compare-intro-label">
+                A CLEARER WAY TO CHOOSE
+              </span>
+            </div>
+
+            <h3>
+              Look Beyond
+              <span>the Premium.</span>
+            </h3>
+
+            <p>
+              The lowest price doesn't always mean the best fit. Compare the
+              details that matter to your circumstances and understand what each
+              policy actually provides.
+            </p>
+
+            <a href="#comparison-checklist" class="premium-compare-intro-link">
+              See what to compare
+              <i data-lucide="arrow-down-right"></i>
+            </a>
+
+            <div class="premium-compare-intro-decoration" aria-hidden="true">
+              <i data-lucide="chart-no-axes-combined"></i>
+            </div>
+          </div>
+
+          <!-- RIGHT: COMPARISON CRITERIA -->
+          <div class="premium-compare-details">
+            <div class="premium-compare-details-header">
+              <div>
+                <span class="premium-compare-details-eyebrow">
+                  YOUR COMPARISON CHECKLIST
+                </span>
+
+                <h3>What Should You Compare?</h3>
+              </div>
+
+              <div class="premium-compare-header-icon">
+                <i data-lucide="list-check"></i>
+              </div>
+            </div>
+
+            <!-- CRITERION 1 -->
+            <article class="premium-compare-row">
+              <div class="premium-compare-row-icon">
+                <i data-lucide="wallet"></i>
+              </div>
+
+              <div class="premium-compare-row-content">
+                <h4>Premium & Payment Terms</h4>
+
+                <p>
+                  Review the premium, payment frequency, and applicable charges.
+                </p>
+              </div>
+
+              <span class="premium-compare-row-number">01</span>
+            </article>
+
+            <!-- CRITERION 2 -->
+            <article class="premium-compare-row">
+              <div class="premium-compare-row-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+
+              <div class="premium-compare-row-content">
+                <h4>Coverage & Benefits</h4>
+
+                <p>
+                  Check covered events, benefit limits, and the protection
+                  provided.
+                </p>
+              </div>
+
+              <span class="premium-compare-row-number">02</span>
+            </article>
+
+            <!-- CRITERION 3 -->
+            <article class="premium-compare-row">
+              <div class="premium-compare-row-icon">
+                <i data-lucide="file-check"></i>
+              </div>
+
+              <div class="premium-compare-row-content">
+                <h4>Exclusions & Waiting Periods</h4>
+
+                <p>
+                  Understand what isn't covered and when coverage or benefits
+                  begin.
+                </p>
+              </div>
+
+              <span class="premium-compare-row-number">03</span>
+            </article>
+
+            <!-- CRITERION 4 -->
+            <article class="premium-compare-row">
+              <div class="premium-compare-row-icon">
+                <i data-lucide="calendar-clock"></i>
+              </div>
+
+              <div class="premium-compare-row-content">
+                <h4>Policy Conditions & Renewals</h4>
+
+                <p>
+                  Review policy duration, renewal conditions, and other
+                  important terms.
+                </p>
+              </div>
+
+              <span class="premium-compare-row-number">04</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- BOTTOM CHECKLIST -->
+        <div class="premium-compare-checklist" id="comparison-checklist">
+          <div class="premium-compare-checklist-heading">
+            <div class="premium-compare-checklist-icon">
+              <i data-lucide="clipboard-check"></i>
+            </div>
+
+            <div>
+              <span class="premium-compare-details-eyebrow">
+                BEFORE YOU DECIDE
+              </span>
+
+              <h3>Your Policy Review Checklist</h3>
+            </div>
+          </div>
+
+          <div class="premium-compare-checklist-grid">
+            <div class="premium-compare-check-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Match coverage to your needs</span>
+            </div>
+
+            <div class="premium-compare-check-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Review limits and exclusions</span>
+            </div>
+
+            <div class="premium-compare-check-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Understand costs and conditions</span>
+            </div>
+
+            <div class="premium-compare-check-item">
+              <i data-lucide="check-circle-2"></i>
+              <span>Read the policy wording</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISCLAIMER -->
+        <div class="premium-compare-note">
+          <i data-lucide="info"></i>
+
+          <p>
+            Policy terms, benefits, exclusions, eligibility, and premiums vary
+            by insurer and product. Refer to the applicable policy documents for
+            the complete details.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LOOK BEYOND THE PREMIUM -->
+    <section class="premium-insight-section" id="look-beyond-premium">
+      <div class="premium-insight-container">
+        <!-- Left Content -->
+        <div class="premium-insight-intro">
+          <span class="section-eyebrow">BEYOND THE PRICE</span>
+
+          <h2 class="premium-insight-title">
+            A Lower Premium Doesn't <span>Always Mean Better Value.</span>
+          </h2>
+
+          <p class="premium-insight-description">
+            The right insurance plan is about more than what you pay. Understand
+            the benefits, limitations, and conditions that can make a difference
+            when you need your coverage.
+          </p>
+
+          <a href="claims.html" class="premium-insight-link">
+            Explore Coverage Options
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!-- Right Content -->
+        <div class="premium-insight-details">
+          <div class="premium-insight-header">
+            <div>
+              <span class="premium-insight-label">WHAT TO CHECK</span>
+              <h3>Look at the Full Picture</h3>
+            </div>
+
+            <span class="premium-insight-header-icon">
+              <i data-lucide="scan-search"></i>
+            </span>
+          </div>
+
+          <div class="premium-insight-item">
+            <span class="premium-insight-item-icon">
+              <i data-lucide="shield-check"></i>
+            </span>
+
+            <div class="premium-insight-item-content">
+              <h4>Coverage and Benefits</h4>
+              <p>
+                Check what the plan covers and whether the benefits fit your
+                needs.
+              </p>
+            </div>
+
+            <span class="premium-insight-item-number">01</span>
+          </div>
+
+          <div class="premium-insight-item">
+            <span class="premium-insight-item-icon">
+              <i data-lucide="file-warning"></i>
+            </span>
+
+            <div class="premium-insight-item-content">
+              <h4>Exclusions and Waiting Periods</h4>
+              <p>
+                Understand what is excluded and when specific benefits become
+                available.
+              </p>
+            </div>
+
+            <span class="premium-insight-item-number">02</span>
+          </div>
+
+          <div class="premium-insight-item">
+            <span class="premium-insight-item-icon">
+              <i data-lucide="wallet"></i>
+            </span>
+
+            <div class="premium-insight-item-content">
+              <h4>Deductibles and Out-of-Pocket Costs</h4>
+              <p>
+                Review the costs you may need to pay yourself under the policy
+                terms.
+              </p>
+            </div>
+
+            <span class="premium-insight-item-number">03</span>
+          </div>
+
+          <div class="premium-insight-item">
+            <span class="premium-insight-item-icon">
+              <i data-lucide="clipboard-check"></i>
+            </span>
+
+            <div class="premium-insight-item-content">
+              <h4>Claim Conditions</h4>
+              <p>
+                Review the documentation, procedures, and conditions for making
+                a claim.
+              </p>
+            </div>
+
+            <span class="premium-insight-item-number">04</span>
+          </div>
+
+          <div class="premium-insight-note">
+            <i data-lucide="info"></i>
+            <p>
+              Policy benefits, exclusions, and conditions vary by insurer and
+              plan. Always review the policy wording before choosing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: A SMARTER WAY TO EVALUATE PLANS -->
+    <section class="premium-evaluate-section" id="evaluate-plans">
+      <div class="premium-evaluate-container">
+        <!-- Section Heading -->
+        <header class="premium-evaluate-header">
+          <span class="section-eyebrow">COMPARE WITH CLARITY</span>
+
+          <h2 class="premium-evaluate-title">
+            A Smarter Way to <span>Evaluate Plans</span>
+          </h2>
+
+          <p class="premium-evaluate-description">
+            Make informed comparisons by understanding your needs, reviewing
+            benefits, and checking the details that matter.
+          </p>
+        </header>
+
+        <!-- Four Evaluation Cards -->
+        <div class="premium-evaluate-steps">
+          <!-- Card 1 -->
+          <article class="premium-evaluate-card">
+            <div class="premium-evaluate-card-top">
+              <span class="premium-evaluate-number">01</span>
+              <span class="premium-evaluate-icon">
+                <i data-lucide="target"></i>
+              </span>
+            </div>
+
+            <h3>Know Your Needs</h3>
+
+            <p>
+              Consider your life stage, budget, dependants, and the protection
+              you want from your insurance plan.
+            </p>
+
+            <a href="contact.html" class="premium-evaluate-card-link">
+              Explore your needs
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="premium-evaluate-card">
+            <div class="premium-evaluate-card-top">
+              <span class="premium-evaluate-number">02</span>
+              <span class="premium-evaluate-icon">
+                <i data-lucide="scale"></i>
+              </span>
+            </div>
+
+            <h3>Compare Benefits</h3>
+
+            <p>
+              Review coverage limits, included benefits, exclusions, and
+              features across the plans you are considering.
+            </p>
+
+            <a href="contact.html" class="premium-evaluate-card-link">
+              Understand coverage
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="premium-evaluate-card">
+            <div class="premium-evaluate-card-top">
+              <span class="premium-evaluate-number">03</span>
+              <span class="premium-evaluate-icon">
+                <i data-lucide="file-check"></i>
+              </span>
+            </div>
+
+            <h3>Review the Details</h3>
+
+            <p>
+              Check waiting periods, deductibles, claim requirements, and the
+              conditions outlined in the policy.
+            </p>
+
+            <a href="contact.html" class="premium-evaluate-card-link">
+              Read common questions
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="premium-evaluate-card">
+            <div class="premium-evaluate-card-top">
+              <span class="premium-evaluate-number">04</span>
+              <span class="premium-evaluate-icon">
+                <i data-lucide="check-circle-2"></i>
+              </span>
+            </div>
+
+            <h3>Choose Your Fit</h3>
+
+            <p>
+              Balance affordability, protection, and useful benefits to find a
+              plan that suits your circumstances.
+            </p>
+
+            <a href="contact.html" class="premium-evaluate-card-link">
+              Get guidance
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: COVERAGE FOR EVERY STAGE OF LIFE -->
+    <section class="premium-lifestage-section" id="coverage-life-stages">
+      <div class="premium-lifestage-container">
+        <!-- Section Header -->
+        <header class="premium-lifestage-header">
+          <span class="section-eyebrow">PROTECTION THAT GROWS WITH YOU</span>
+
+          <h2 class="premium-lifestage-title">
+            Coverage for Every <span>Stage of Life</span>
+          </h2>
+
+          <p class="premium-lifestage-description">
+            Your priorities change as life moves forward. Explore coverage
+            options that can help support the people and plans that matter to
+            you.
+          </p>
+        </header>
+
+        <!-- Life Stage Rows -->
+        <div class="premium-lifestage-list">
+          <!-- Stage 1 -->
+          <article class="premium-lifestage-row">
+            <div class="premium-lifestage-number">01</div>
+
+            <div
+              class="premium-lifestage-image premium-lifestage-image-young"
+              role="img"
+              aria-label="Young adult beginning a new chapter"
+            ></div>
+
+            <div class="premium-lifestage-content">
+              <span class="premium-lifestage-label">A STRONG START</span>
+
+              <h3>Building Your Independence</h3>
+
+              <p>
+                As you begin your career and build financial independence,
+                explore protection that fits your current needs and budget.
+              </p>
+
+              <a href="plans.html" class="premium-lifestage-link">
+                Explore health insurance
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Stage 2 -->
+          <article class="premium-lifestage-row">
+            <div class="premium-lifestage-number">02</div>
+
+            <div
+              class="premium-lifestage-image premium-lifestage-image-couple"
+              role="img"
+              aria-label="Couple planning their future together"
+            ></div>
+
+            <div class="premium-lifestage-content">
+              <span class="premium-lifestage-label">PLANNING TOGETHER</span>
+
+              <h3>Sharing Responsibilities</h3>
+
+              <p>
+                When others depend on you, consider how insurance may help
+                protect shared commitments and long-term financial plans.
+              </p>
+
+              <a href="plans.html" class="premium-lifestage-link">
+                Explore life insurance
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Stage 3 -->
+          <article class="premium-lifestage-row">
+            <div class="premium-lifestage-number">03</div>
+
+            <div
+              class="premium-lifestage-image premium-lifestage-image-family"
+              role="img"
+              aria-label="Family spending time together at home"
+            ></div>
+
+            <div class="premium-lifestage-content">
+              <span class="premium-lifestage-label"
+                >PROTECTING YOUR FAMILY</span
+              >
+
+              <h3>Planning for What Comes Next</h3>
+
+              <p>
+                As family responsibilities grow, review whether your existing
+                protection still matches your needs and future goals.
+              </p>
+
+              <a href="plans.html" class="premium-lifestage-link">
+                Explore family protection
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Supporting Note -->
+        <p class="premium-lifestage-note">
+          <i data-lucide="info"></i>
+          <span>
+            Insurance needs are personal. Available benefits and eligibility
+            depend on the insurer and the policy terms.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     POLICY PATH — HOME 2
+     SECTION 7: SUPPORT BEYOND YOUR COMPARISON
+     ========================================================= -->
+
+    <section class="premium-support-section" id="support-beyond-comparison">
+      <div class="premium-support-container">
+        <!-- FULL-WIDTH SECTION HEADING -->
+        <header class="premium-support-heading">
+          <span class="section-eyebrow">HERE WHEN YOU NEED US</span>
+
+          <h2 class="premium-support-title">
+            Support Beyond Your <span>Comparison</span>
+          </h2>
+
+          <p class="premium-support-description">
+            Comparing insurance plans is an important first step. When you need
+            help understanding the details, PolicyPath helps you move forward
+            with greater clarity and confidence.
+          </p>
+        </header>
+
+        <!-- TWO-COLUMN CONTENT -->
+        <div class="premium-support-layout">
+          <!-- LEFT: IMAGE -->
+          <div class="premium-support-visual">
+            <img
+              src="images/comparision.png"
+              alt="Insurance professional helping a customer understand coverage options"
+              loading="lazy"
+            />
+
+            <div class="premium-support-image-caption">
+              <span class="premium-support-caption-icon">
+                <i data-lucide="shield-check"></i>
+              </span>
+
+              <div>
+                <strong>Guidance with clarity</strong>
+                <p>Make your next insurance decision with confidence.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: SUPPORT PANEL -->
+          <div class="premium-support-panel">
+            <!-- PANEL HEADER -->
+            <div class="premium-support-panel-header">
+              <div>
+                <span class="premium-support-panel-label">
+                  YOUR NEXT STEP
+                </span>
+
+                <h3>How We Can Help</h3>
+              </div>
+
+              <span class="premium-support-panel-icon">
+                <i data-lucide="messages-square"></i>
+              </span>
+            </div>
+
+            <!-- SUPPORT OPTION 1 -->
+            <a href="faq.html" class="premium-support-option">
+              <span class="premium-support-option-icon">
+                <i data-lucide="circle-help"></i>
+              </span>
+
+              <span class="premium-support-option-content">
+                <strong>Understand the Details</strong>
+                <span>
+                  Find answers to common questions about insurance and policy
+                  terms.
+                </span>
+              </span>
+
+              <i
+                data-lucide="arrow-up-right"
+                class="premium-support-option-arrow"
+              ></i>
+            </a>
+
+            <!-- SUPPORT OPTION 2 -->
+            <a href="health-insurance.html" class="premium-support-option">
+              <span class="premium-support-option-icon">
+                <i data-lucide="file-search"></i>
+              </span>
+
+              <span class="premium-support-option-content">
+                <strong>Explore Your Options</strong>
+                <span>
+                  Review coverage features and details before choosing a plan.
+                </span>
+              </span>
+
+              <i
+                data-lucide="arrow-up-right"
+                class="premium-support-option-arrow"
+              ></i>
+            </a>
+
+            <!-- SUPPORT OPTION 3 -->
+            <a href="contact.html" class="premium-support-option">
+              <span class="premium-support-option-icon">
+                <i data-lucide="headset"></i>
+              </span>
+
+              <span class="premium-support-option-content">
+                <strong>Get Personal Guidance</strong>
+                <span>
+                  Contact our team if you need help with your next step.
+                </span>
+              </span>
+
+              <i
+                data-lucide="arrow-up-right"
+                class="premium-support-option-arrow"
+              ></i>
+            </a>
+
+            <!-- PANEL FOOTER -->
+            <div class="premium-support-panel-footer">
+              <i data-lucide="info"></i>
+
+              <p>
+                Always review the insurer's official policy wording before
+                making your final decision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- SECTION 8: COMPACT FINAL CTA -->
+
+<section class="premium-final-cta-section" id="final-cta">
+
+  <div class="premium-final-cta-container">
+
+    <span class="section-eyebrow">
+      INSURANCE, MADE CLEAR.
+    </span>
+
+    <h2 class="premium-final-cta-title">
+      Your Next Chapter <span>Starts with Clarity</span>
+    </h2>
+
+    <p class="premium-final-cta-description">
+      Explore your options, understand your coverage,
+      and take your next step with confidence.
+    </p>
+
+    <div class="premium-final-cta-actions">
+
+      <a href="health-insurance.html"
+         class="premium-final-cta-primary">
+        Explore Insurance Options
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+      <a href="contact.html"
+         class="premium-final-cta-secondary">
+        Talk to Our Team
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= POLICYPATH FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Brand Column -->
+    <div class="footer-col footer-brand">
+
+      <div class="footer-logo">
+        <a href="index.html" aria-label="PolicyPath Home">
+          <img
+            class="logo-light"
+            src="images/light-logo.png"
+            alt="PolicyPath Logo"
+          >
+
+          <img
+            class="logo-dark"
+            src="images/dark-logo.png"
+            alt="PolicyPath Logo"
+          >
+        </a>
+
+        <div class="footer-branding">
+          <a href="index.html" class="brand-title">
+            Policy<span class="era">Path</span>
+          </a>
+          <p>Insurance, Made Clear.</p>
+        </div>
+      </div>
+
+      <p class="footer-about">
+        Explore life and health insurance with greater clarity.
+        Understand your options and navigate your insurance
+        journey with confidence.
+      </p>
+
+      <!-- Social Media -->
+    <div class="social-media">
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <i data-lucide="camera" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <i data-lucide="users" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Pinterest" title="Pinterest">
+          <i data-lucide="pin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto:hello@vintageera.com" aria-label="Email" title="Email">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="plans.html">Insurance Plans</a></li>
+        <li><a href="claims.html">Claims Assistance</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance Plans -->
+    <div class="footer-col">
+      <h3>Insurance Plans</h3>
+
+      <ul>
+        <li><a href="plans.html">Term Life Insurance</a></li>
+        <li><a href="plans.html">Whole Life Insurance</a></li>
+        <li><a href="plans.html">Individual Health</a></li>
+        <li><a href="plans.html">Family Health</a></li>
+        <li><a href="plans.html">Senior Health</a></li>
+        <li><a href="plans.html">Compare Plans</a></li>
+      </ul>
+    </div>
+
+    <!-- Claims Support -->
+    <div class="footer-col">
+      <h3>Claims Support</h3>
+
+      <ul>
+        <li><a href="claims.html">Claims Process</a></li>
+        <li><a href="claims.html">Required Documents</a></li>
+        <li><a href="claims.html">Life Insurance Claims</a></li>
+        <li><a href="claims.html">Health Insurance Claims</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="comming.html">Comming Soon....</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+
+      <ul>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>India</span>
+        </li>
+
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="contact.html">90909 09090</a>
+        </li>
+
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@policypath.com">
+            hello@policypath.com
+          </a>
+        </li>
+
+        <li>
+          <i data-lucide="clock"></i>
+          <span>Monday – Saturday</span>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="footer-book-btn">
+        Talk to an Advisor
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+
+    <p>
+      © <span id="copyrightYear">2026</span>
+      <span class="footer-brand-name">Policy<span class="path">Path</span></span>.
+      All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="cookies.html">Cookies</a>
+
+      <a href="#top" class="top-btn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="global.js"></script>
+    <script src="home2.js"></script>
+  </body>
+</html>

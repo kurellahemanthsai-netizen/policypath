@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dark-logo.png" />
+
+    <title>About</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- ================= POLICYPATH HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" aria-label="PolicyPath Home">
+            <img
+              class="logo-light"
+              src="images/light-logo.png"
+              alt="PolicyPath Logo"
+            />
+
+            <img
+              class="logo-dark"
+              src="images/dark-logo.png"
+              alt="PolicyPath Logo"
+            />
+          </a>
+
+          <div class="logo-text">
+            <a href="index.html" class="brand-title">
+              Policy<span class="era">Path</span>
+            </a>
+            <p>Insurance, Made Clear.</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="primaryNavbar">
+          <ul class="nav-links">
+            <!-- Home Dropdown -->
+            <li class="dropdown">
+              <a href="index.html">
+                Home
+                <i data-lucide="chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house"></i>
+                    Home 1 — Classic
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles"></i>
+                    Home 2 — Premium
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="claims.html">Claims Assistance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <!-- Mobile Sign Up Button -->
+          <div class="mobile-book">
+            <a href="login.html" class="book-btn">
+              Login
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-buttons">
+          <!-- RTL Toggle -->
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL mode"
+            title="RTL Mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Dark Mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- Desktop Sign Up -->
+          <a href="login.html" class="book-btn desktop-book">
+            Login
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: ABOUT HERO -->
+    <section class="about-hero" aria-labelledby="about-hero-title">
+      <div class="about-hero-container">
+        <!-- LEFT: IMAGE -->
+        <div class="about-hero-visual">
+          <div class="about-hero-image-frame">
+            <img
+              src="images/hero-3.png"
+              alt="An insurance advisor helping clients understand their coverage options"
+            />
+          </div>
+
+          <!-- Floating information card -->
+          <div class="about-hero-float-card">
+            <span class="about-hero-float-icon">
+              <i data-lucide="shield-check"></i>
+            </span>
+
+            <div class="about-hero-float-content">
+              <h3>Choose with Clarity</h3>
+              <p>Understand your options before you decide.</p>
+            </div>
+          </div>
+
+          <!-- Decorative accent -->
+          <span class="about-hero-decoration" aria-hidden="true"></span>
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="about-hero-content">
+          <span class="section-eyebrow">ABOUT POLICYPATH</span>
+
+          <h1 id="about-hero-title" class="about-hero-title">
+            A Clearer Path to
+            <span>Better Protection.</span>
+          </h1>
+
+          <p class="about-hero-description">
+            Insurance decisions don't have to feel complicated. We help you
+            understand your options, explore relevant coverage, and move forward
+            with greater confidence.
+          </p>
+
+          <p class="about-hero-supporting-text">
+            Because choosing protection should begin with understanding what
+            matters most to you.
+          </p>
+
+          <div class="about-hero-actions">
+            <a href="contact.html" class="about-hero-primary">
+              Talk to an Advisor
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#our-story" class="about-hero-secondary">
+              Discover Our Story
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Trust indicators -->
+          <div class="about-hero-trust">
+            <span class="about-hero-trust-icon">
+              <i data-lucide="check-circle-2"></i>
+            </span>
+
+            <p>Clear information. Thoughtful guidance. Informed choices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SECTION 2: OUR STORY
+     CONTENT LEFT | IMAGE RIGHT
+     ===================================================== -->
+
+    <section
+      class="about-story-section"
+      id="our-story"
+      aria-labelledby="about-story-title"
+    >
+      <div class="about-story-container">
+        <!-- LEFT COLUMN: CONTENT -->
+        <div class="about-story-content">
+          <span class="section-eyebrow">OUR STORY</span>
+
+          <h2 class="about-story-title" id="about-story-title">
+            Insurance Should Feel
+            <span>Clear, Not Complicated.</span>
+          </h2>
+
+          <p class="about-story-intro">
+            Choosing insurance is an important decision, but understanding the
+            available options can sometimes feel overwhelming.
+          </p>
+
+          <p class="about-story-description">
+            PolicyPath is built around a simple idea: people deserve clear
+            information to help them make informed insurance decisions.
+            Understanding policy terms, coverage options, and important details
+            should feel more approachable.
+          </p>
+
+          <p class="about-story-description">
+            We believe a better insurance journey begins with understanding your
+            needs, explaining options clearly, and helping you consider the
+            details that matter before making a decision.
+          </p>
+
+          <!-- STORY PRINCIPLES -->
+          <div class="about-story-principles">
+            <article class="about-story-principle">
+              <span class="about-story-principle-icon">
+                <i data-lucide="book-open-check"></i>
+              </span>
+
+              <div class="about-story-principle-content">
+                <h3>Clarity First</h3>
+                <p>Make important coverage details easier to understand.</p>
+              </div>
+            </article>
+
+            <article class="about-story-principle">
+              <span class="about-story-principle-icon">
+                <i data-lucide="users"></i>
+              </span>
+
+              <div class="about-story-principle-content">
+                <h3>People Matter</h3>
+                <p>
+                  Recognize that every person's insurance needs are different.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- CTA -->
+          <a href="contact.html" class="about-story-link">
+            Get to Know PolicyPath
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT COLUMN: IMAGE -->
+        <div class="about-story-visual">
+          <div class="about-story-image-frame">
+            <img
+              src="images/story.png"
+              alt="An insurance advisor discussing coverage options with a client"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Decorative frame -->
+          <span class="about-story-image-accent" aria-hidden="true"></span>
+
+          <!-- FLOATING INFORMATION CARD -->
+          <div class="about-story-stat-card">
+            <span class="about-story-stat-icon">
+              <i data-lucide="compass"></i>
+            </span>
+
+            <div class="about-story-stat-content">
+              <span class="about-story-stat-label"> OUR APPROACH </span>
+
+              <h3>Guidance With Purpose</h3>
+
+              <p>Helping make complex choices easier to understand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SECTION 3: OUR MISSION & VISION
+     ===================================================== -->
+
+    <section
+      class="mission-vision-section"
+      id="mission-vision"
+      aria-labelledby="mission-vision-title"
+    >
+      <div class="mission-vision-container">
+        <!-- Section Heading -->
+        <div class="mission-vision-header">
+          <span class="section-eyebrow">OUR PURPOSE</span>
+
+          <h2 class="mission-vision-title" id="mission-vision-title">
+            Protection Starts with
+            <span>Understanding.</span>
+          </h2>
+
+          <p class="mission-vision-description">
+            We believe insurance should feel clear, personal, and empowering.
+            Our purpose is to help people make informed protection decisions
+            with confidence, without unnecessary confusion or pressure.
+          </p>
+        </div>
+
+        <!-- Mission & Vision Cards -->
+        <div class="mission-vision-grid">
+          <!-- Mission Card -->
+          <article class="mission-vision-card mission-card">
+            <div class="mission-vision-card-top">
+              <div class="mission-vision-icon" aria-hidden="true">
+                <i data-lucide="compass"></i>
+              </div>
+
+              <span class="mission-vision-number">01</span>
+            </div>
+
+            <span class="mission-vision-label">WHAT WE DO</span>
+
+            <h3>Our Mission</h3>
+
+            <p>
+              To make insurance easier to understand by helping people explore
+              relevant coverage options, understand important details, and
+              choose protection that aligns with their needs. We are committed
+              to simplifying complex insurance information, providing clear and
+              transparent guidance, and helping individuals make informed
+              decisions without unnecessary confusion or pressure. By focusing
+              on each person's unique circumstances, priorities, and long-term
+              goals, we aim to make the process of finding suitable coverage
+              more accessible and reassuring. Our mission is to build lasting
+              trust through a people-first approach, empowering individuals and
+              families to protect what matters most and move forward with
+              greater confidence and peace of mind.
+            </p>
+
+            <div class="mission-vision-card-footer">
+              <span class="mission-vision-line"></span>
+              <span>Clarity in every decision</span>
+            </div>
+          </article>
+
+          <!-- Vision Card -->
+          <article class="mission-vision-card vision-card">
+            <div class="mission-vision-card-top">
+              <div class="mission-vision-icon" aria-hidden="true">
+                <i data-lucide="eye"></i>
+              </div>
+
+              <span class="mission-vision-number">02</span>
+            </div>
+
+            <span class="mission-vision-label">WHERE WE'RE GOING</span>
+
+            <h3>Our Vision</h3>
+
+            <p>
+              To create a future where everyone can approach insurance with
+              greater confidence, understand their choices, and feel empowered
+              to plan for life's uncertainties. We envision a world where
+              insurance is not seen as a complicated obligation, but as a
+              meaningful step toward financial security and peace of mind. By
+              promoting transparency, simplifying complex information, and
+              encouraging informed decisions, we aim to help individuals and
+              families find protection that aligns with their needs, priorities,
+              and future goals. Our vision is to build lasting trust through
+              clear guidance and a people-first approach, making every
+              protection decision feel more accessible, reassuring, and
+              purposeful for generations to come with confidence.
+            </p>
+
+            <div class="mission-vision-card-footer">
+              <span class="mission-vision-line"></span>
+              <span>Confidence for the future</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Closing Statement -->
+        <div class="mission-vision-note">
+          <i data-lucide="shield-check" aria-hidden="true"></i>
+
+          <p>
+            <strong>Our commitment:</strong>
+            Put understanding first, so protection decisions feel more
+            meaningful.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SECTION 4: OUR CORE VALUES
+     ===================================================== -->
+
+    <section
+      class="core-values-section"
+      id="core-values"
+      aria-labelledby="core-values-title"
+    >
+      <div class="core-values-container">
+        <!-- Centered Section Header -->
+        <div class="core-values-header">
+          <span class="section-eyebrow">WHAT GUIDES US</span>
+
+          <h2 class="core-values-title" id="core-values-title">
+            The Values Behind
+            <span>Every Promise.</span>
+          </h2>
+
+          <p class="core-values-description">
+            The principles that shape how we listen, guide, and support people
+            in making informed insurance decisions. At PolicyPath, our values
+            are the foundation of every relationship we build.
+          </p>
+        </div>
+
+        <!-- Image Left / Values Right -->
+        <div class="core-values-content">
+          <!-- Left Image -->
+          <div class="core-values-visual">
+            <div class="core-values-image-frame">
+              <img
+                src="images/guide.png"
+                alt="Family enjoying time together outdoors, representing protection and peace of mind"
+                class="core-values-image"
+                loading="lazy"
+              />
+
+              <div class="core-values-image-overlay"></div>
+
+              <div class="core-values-image-caption">
+                <span class="core-values-caption-icon">
+                  <i data-lucide="shield-check" aria-hidden="true"></i>
+                </span>
+
+                <div>
+                  <span class="core-values-caption-label">
+                    OUR COMMITMENT
+                  </span>
+
+                  <h3>People Before Policies.</h3>
+
+                  <p>Understanding what matters most to you comes first.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="core-values-image-accent"></div>
+          </div>
+
+          <!-- Right Value Points -->
+          <div class="core-values-list">
+            <!-- Value 1 -->
+            <article class="core-value-item">
+              <div class="core-value-icon">
+                <i data-lucide="scan-eye" aria-hidden="true"></i>
+              </div>
+
+              <div class="core-value-content">
+                <div class="core-value-heading">
+                  <span class="core-value-number">01</span>
+                  <h3>Transparency</h3>
+                </div>
+
+                <p>
+                  We believe clear information leads to better decisions. We aim
+                  to simplify insurance details, explain coverage options, and
+                  help you understand important terms and conditions before
+                  moving forward.
+                </p>
+              </div>
+            </article>
+
+            <!-- Value 2 -->
+            <article class="core-value-item">
+              <div class="core-value-icon">
+                <i data-lucide="handshake" aria-hidden="true"></i>
+              </div>
+
+              <div class="core-value-content">
+                <div class="core-value-heading">
+                  <span class="core-value-number">02</span>
+                  <h3>Trust &amp; Integrity</h3>
+                </div>
+
+                <p>
+                  Trust is built through honesty, consistency, and
+                  responsibility. We strive to provide clear guidance,
+                  communicate openly, and put your understanding at the center
+                  of every interaction.
+                </p>
+              </div>
+            </article>
+
+            <!-- Value 3 -->
+            <article class="core-value-item">
+              <div class="core-value-icon">
+                <i data-lucide="heart-handshake" aria-hidden="true"></i>
+              </div>
+
+              <div class="core-value-content">
+                <div class="core-value-heading">
+                  <span class="core-value-number">03</span>
+                  <h3>People First</h3>
+                </div>
+
+                <p>
+                  Every person has different needs, responsibilities, and
+                  priorities. We focus on understanding your circumstances so
+                  you can explore protection options that are relevant to your
+                  life and goals.
+                </p>
+              </div>
+            </article>
+
+            <!-- Value 4 -->
+            <article class="core-value-item">
+              <div class="core-value-icon">
+                <i data-lucide="book-open-check" aria-hidden="true"></i>
+              </div>
+
+              <div class="core-value-content">
+                <div class="core-value-heading">
+                  <span class="core-value-number">04</span>
+                  <h3>Empowerment</h3>
+                </div>
+
+                <p>
+                  We want you to feel confident about your choices. By making
+                  insurance information easier to understand, we help you
+                  compare available options and make informed decisions at your
+                  own pace.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SECTION 5: HOW WE HELP
+====================================================== -->
+    <section
+      class="how-we-help-section"
+      id="how-we-help"
+      aria-labelledby="how-we-help-title"
+    >
+      <div class="how-we-help-container">
+        <!-- Section Header -->
+        <header class="how-we-help-header">
+          <span class="section-eyebrow">HOW WE HELP</span>
+
+          <h2 id="how-we-help-title">
+            Insurance Guidance, Made <span>Simple</span>
+          </h2>
+
+          <p class="how-we-help-description">
+            Choosing insurance doesn't have to feel complicated. We help you
+            understand your needs, explore your options, and make informed
+            decisions with greater confidence.
+          </p>
+        </header>
+
+        <!-- Help Cards -->
+        <div class="how-we-help-grid">
+          <!-- Card 1 -->
+          <article class="help-card">
+            <div class="help-card-icon">
+              <i data-lucide="messages-square" aria-hidden="true"></i>
+            </div>
+
+            <span class="help-card-number">01</span>
+
+            <h3>Understand Your Needs</h3>
+
+            <p>
+              We start by understanding your circumstances, priorities, and
+              goals so you can explore protection that suits your needs.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="help-card">
+            <div class="help-card-icon">
+              <i data-lucide="layers-3" aria-hidden="true"></i>
+            </div>
+
+            <span class="help-card-number">02</span>
+
+            <h3>Explore Your Options</h3>
+
+            <p>
+              Discover relevant coverage options and compare important features
+              to better understand what different policies offer for your needs
+              and priorities.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="help-card">
+            <div class="help-card-icon">
+              <i data-lucide="file-search" aria-hidden="true"></i>
+            </div>
+
+            <span class="help-card-number">03</span>
+
+            <h3>Understand the Details</h3>
+
+            <p>
+              Get clearer explanations of policy terms, benefits, exclusions,
+              and limitations before making your decision with greater
+              confidence and peace of mind.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="help-card">
+            <div class="help-card-icon">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+            </div>
+
+            <span class="help-card-number">04</span>
+
+            <h3>Choose with Confidence</h3>
+
+            <p>
+              Make a more informed choice at your own pace, with a clearer
+              understanding of the protection you are considering.
+            </p>
+          </article>
+        </div>
+
+        <!-- Closing Note -->
+        <div class="how-we-help-note">
+          <span class="how-we-help-note-icon">
+            <i data-lucide="heart-handshake" aria-hidden="true"></i>
+          </span>
+
+          <p>
+            <strong>Your needs come first.</strong>
+            Our approach focuses on clarity, transparency, and helping you make
+            decisions that feel right for your circumstances.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SECTION 6: FINAL CTA
+====================================================== -->
+    <section
+      class="about-final-cta"
+      id="about-final-cta"
+      aria-labelledby="about-final-cta-title"
+    >
+      <div class="about-final-cta-container">
+        <!-- CTA CONTENT -->
+        <div class="about-final-cta-content">
+          <span class="section-eyebrow">YOUR NEXT STEP</span>
+
+          <h2 id="about-final-cta-title">
+            Let’s Find the Right Protection for You
+          </h2>
+
+          <p>
+            Explore insurance options with clear information and thoughtful
+            guidance to make confident decisions.
+          </p>
+        </div>
+
+        <!-- SINGLE CTA BUTTON -->
+        <div class="about-final-cta-actions">
+          <a
+            href="plans.html"
+            class="about-final-cta-primary"
+            aria-label="Explore insurance coverage options"
+          >
+            <span>Explore Coverage</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!-- ================= POLICYPATH FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Brand Column -->
+    <div class="footer-col footer-brand">
+
+      <div class="footer-logo">
+        <a href="index.html" aria-label="PolicyPath Home">
+          <img
+            class="logo-light"
+            src="images/light-logo.png"
+            alt="PolicyPath Logo"
+          >
+
+          <img
+            class="logo-dark"
+            src="images/dark-logo.png"
+            alt="PolicyPath Logo"
+          >
+        </a>
+
+        <div class="footer-branding">
+          <a href="index.html" class="brand-title">
+            Policy<span class="era">Path</span>
+          </a>
+          <p>Insurance, Made Clear.</p>
+        </div>
+      </div>
+
+      <p class="footer-about">
+        Explore life and health insurance with greater clarity.
+        Understand your options and navigate your insurance
+        journey with confidence.
+      </p>
+
+      <!-- Social Media -->
+    <div class="social-media">
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <i data-lucide="camera" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <i data-lucide="users" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Pinterest" title="Pinterest">
+          <i data-lucide="pin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto:hello@vintageera.com" aria-label="Email" title="Email">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="plans.html">Insurance Plans</a></li>
+        <li><a href="claims.html">Claims Assistance</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance Plans -->
+    <div class="footer-col">
+      <h3>Insurance Plans</h3>
+
+      <ul>
+        <li><a href="plans.html">Term Life Insurance</a></li>
+        <li><a href="plans.html">Whole Life Insurance</a></li>
+        <li><a href="plans.html">Individual Health</a></li>
+        <li><a href="plans.html">Family Health</a></li>
+        <li><a href="plans.html">Senior Health</a></li>
+        <li><a href="plans.html">Compare Plans</a></li>
+      </ul>
+    </div>
+
+    <!-- Claims Support -->
+    <div class="footer-col">
+      <h3>Claims Support</h3>
+
+      <ul>
+        <li><a href="claims.html">Claims Process</a></li>
+        <li><a href="claims.html">Required Documents</a></li>
+        <li><a href="claims.html">Life Insurance Claims</a></li>
+        <li><a href="claims.html">Health Insurance Claims</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="comming.html">Comming Soon....</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+
+      <ul>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>India</span>
+        </li>
+
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="contact.html">90909 09090</a>
+        </li>
+
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@policypath.com">
+            hello@policypath.com
+          </a>
+        </li>
+
+        <li>
+          <i data-lucide="clock"></i>
+          <span>Monday – Saturday</span>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="footer-book-btn">
+        Talk to an Advisor
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+
+    <p>
+      © <span id="copyrightYear">2026</span>
+      <span class="footer-brand-name">Policy<span class="path">Path</span></span>.
+      All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="cookies.html">Cookies</a>
+
+      <a href="#top" class="top-btn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+    <script src="global.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

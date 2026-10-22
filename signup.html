@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dark-logo.png" />
+
+    <title>Create Account</title>
+    <meta name="description" content="Create your PolicyPath account." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body class="signup-page">
+    <!-- THEME AND RTL CONTROLS -->
+    <div class="signup-utility-controls">
+      <button
+        class="icon-btn"
+        id="darkToggle"
+        type="button"
+        aria-label="Switch to dark mode"
+        title="Dark Mode"
+        aria-pressed="false"
+      >
+        <i data-lucide="moon" aria-hidden="true"></i>
+      </button>
+
+      <button
+        class="icon-btn"
+        id="rtlToggle"
+        type="button"
+        aria-label="Switch to right-to-left mode"
+        title="RTL Mode"
+        aria-pressed="false"
+      >
+        <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- SIGNUP MAIN -->
+    <main class="signup-main">
+      <div class="signup-card">
+        <!-- =================================================
+           LEFT BRAND PANEL
+      ================================================== -->
+
+        <section class="signup-brand-panel">
+          <div class="signup-brand-decoration signup-decoration-one"></div>
+          <div class="signup-brand-decoration signup-decoration-two"></div>
+          <div class="signup-brand-decoration signup-decoration-three"></div>
+
+          <div class="signup-brand-content">
+            <span class="signup-brand-eyebrow">
+              <span class="signup-brand-eyebrow-line"></span>
+              INSURANCE, MADE CLEAR.
+            </span>
+
+            <h1 class="signup-brand-title">
+              Your Future,<br />
+              <span>Better Protected.</span>
+            </h1>
+
+            <p class="signup-brand-description">
+              Create your PolicyPath account and make your insurance journey
+              simpler with clear information and thoughtful guidance.
+            </p>
+
+            <!-- BENEFITS -->
+            <div class="signup-benefits">
+              <div class="signup-benefit">
+                <span class="signup-benefit-icon">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                </span>
+                <p>Explore insurance coverage options</p>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="signup-benefit-icon">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                </span>
+                <p>Understand important policy details</p>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="signup-benefit-icon">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                </span>
+                <p>Make more informed decisions</p>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="signup-benefit-icon">
+                  <i data-lucide="check" aria-hidden="true"></i>
+                </span>
+                <p>Get guidance for your insurance journey</p>
+              </div>
+            </div>
+
+            <!-- BRAND STATISTICS / FEATURES -->
+            <div class="signup-brand-divider"></div>
+
+            <div class="signup-brand-stats">
+              <div class="signup-brand-stat">
+                <span class="signup-stat-icon">
+                  <i data-lucide="shield-check" aria-hidden="true"></i>
+                </span>
+                <span class="signup-stat-label">Protection</span>
+              </div>
+
+              <div class="signup-brand-stat">
+                <span class="signup-stat-icon">
+                  <i data-lucide="file-check-2" aria-hidden="true"></i>
+                </span>
+                <span class="signup-stat-label">Clarity</span>
+              </div>
+
+              <div class="signup-brand-stat">
+                <span class="signup-stat-icon">
+                  <i data-lucide="handshake" aria-hidden="true"></i>
+                </span>
+                <span class="signup-stat-label">Guidance</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =================================================
+           RIGHT SIGNUP PANEL
+      ================================================== -->
+
+        <section class="signup-form-panel">
+          <div class="signup-form-inner">
+            <!-- LOGO -->
+            <a
+              href="index.html"
+              class="signup-logo"
+              aria-label="PolicyPath Home"
+            >
+              <img
+                class="logo-light"
+                src="images/light-logo.png"
+                alt="PolicyPath Logo"
+              />
+
+              <img
+                class="logo-dark"
+                src="images/dark-logo.png"
+                alt="PolicyPath Logo"
+              />
+
+              <span class="signup-logo-text">
+                <span class="signup-logo-title"> Policy<span>Path</span> </span>
+                <span class="signup-logo-tagline">INSURANCE, MADE CLEAR.</span>
+              </span>
+            </a>
+
+            <span class="signup-form-eyebrow">CREATE YOUR ACCOUNT</span>
+
+            <h2 class="signup-form-title" id="signupTitle">Join PolicyPath</h2>
+
+            <p class="signup-form-subtitle">
+              Create your account to get started.
+            </p>
+
+            <!-- SIGNUP FORM -->
+            <form class="signup-form" id="signupForm">
+              <!-- FIRST NAME + LAST NAME -->
+              <div class="signup-form-grid">
+                <div class="signup-field">
+                  <label for="firstName">First Name</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="user-round" aria-hidden="true"></i>
+
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Enter first name"
+                      autocomplete="given-name"
+                      maxlength="60"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="signup-field">
+                  <label for="lastName">Last Name</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="user-round" aria-hidden="true"></i>
+
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Enter last name"
+                      autocomplete="family-name"
+                      maxlength="60"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="signup-field">
+                  <label for="signupEmail">Email Address</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="mail" aria-hidden="true"></i>
+
+                    <input
+                      type="email"
+                      id="signupEmail"
+                      name="email"
+                      placeholder="Enter your email address"
+                      autocomplete="email"
+                      maxlength="254"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="signup-field">
+                  <label for="signupPhone">Phone Number</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="phone" aria-hidden="true"></i>
+
+                    <input
+                      type="tel"
+                      id="signupPhone"
+                      name="phone"
+                      placeholder="+91 00000 00000"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      maxlength="20"
+                      pattern="[+0-9() -]{7,20}"
+                      title="Enter a valid phone number using digits and optional +, spaces, parentheses, or hyphens."
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="signup-field">
+                  <label for="signupPassword">Password</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+
+                    <input
+                      type="password"
+                      id="signupPassword"
+                      name="password"
+                      placeholder="Create a password"
+                      autocomplete="new-password"
+                      minlength="8"
+                      required
+                    />
+
+                    <button
+                      type="button"
+                      class="signup-password-toggle"
+                      data-password-target="signupPassword"
+                      aria-label="Show password"
+                      aria-pressed="false"
+                    >
+                      <i data-lucide="eye" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="signup-field">
+                  <label for="confirmPassword">Confirm Password</label>
+
+                  <div class="signup-input-wrap">
+                    <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+
+                    <input
+                      type="password"
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      placeholder="Re-enter your password"
+                      autocomplete="new-password"
+                      minlength="8"
+                      required
+                    />
+
+                    <button
+                      type="button"
+                      class="signup-password-toggle"
+                      data-password-target="confirmPassword"
+                      aria-label="Show confirm password"
+                      aria-pressed="false"
+                    >
+                      <i data-lucide="eye" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TERMS -->
+              <label class="signup-terms">
+                <input type="checkbox" id="signupTerms" name="terms" required />
+
+                <span>
+                  I agree to the
+                  <a href="terms.html">Terms of Service</a>
+                  and
+                  <a href="privacy.html">Privacy Policy</a>.
+                </span>
+              </label>
+
+              <!-- SUBMIT -->
+              <button type="submit" class="signup-submit">
+                <span>Create Account</span>
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </button>
+
+              <!-- STATUS MESSAGE -->
+              <p
+                class="signup-feedback"
+                id="signupFeedback"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></p>
+            </form>
+
+            <!-- SOCIAL DIVIDER -->
+            <div class="signup-divider">
+              <span></span>
+              <p>or sign up with</p>
+              <span></span>
+            </div>
+
+            <!-- SOCIAL SIGNUP -->
+            <div class="signup-social-buttons">
+              <button
+                type="button"
+                class="signup-social-button"
+                id="googleSignup"
+              >
+                <span class="signup-google-icon" aria-hidden="true">G</span>
+                <span>Google</span>
+              </button>
+
+              <button
+                type="button"
+                class="signup-social-button"
+                id="appleSignup"
+              >
+                <i data-lucide="apple" aria-hidden="true"></i>
+                <span>Apple</span>
+              </button>
+            </div>
+
+            <!-- LOGIN LINK -->
+            <p class="signup-login-link">
+              Already have an account?
+              <a href="login.html">Sign In</a>
+            </p>
+
+            <!-- BACK HOME -->
+            <a href="index.html" class="signup-back-home">
+              <i data-lucide="arrow-left" aria-hidden="true"></i>
+              <span>Back to PolicyPath</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- SHARED SETTINGS -->
+    <script src="global.js"></script>
+
+    <!-- SIGNUP INTERACTIONS -->
+    <script src="signup.js"></script>
+  </body>
+</html>

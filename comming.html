@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Comming Soon </title>
+  <meta
+    name="description"
+    content="PolicyPath is preparing a clearer way to explore insurance. Stay tuned for our launch."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link rel="icon" href="images/dark-logo.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="comming.css">
+</head>
+
+<body class="coming-soon-page">
+
+  <!-- THEME AND RTL CONTROLS -->
+  <div class="coming-soon-controls">
+
+    <button
+      class="icon-btn"
+      id="darkToggle"
+      type="button"
+      aria-label="Switch to dark mode"
+      title="Dark Mode"
+      aria-pressed="false"
+    >
+      <i data-lucide="moon" aria-hidden="true"></i>
+    </button>
+
+    <button
+      class="icon-btn"
+      id="rtlToggle"
+      type="button"
+      aria-label="Switch to right-to-left mode"
+      title="RTL Mode"
+      aria-pressed="false"
+    >
+      <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+    </button>
+
+  </div>
+
+  <!-- MAIN PAGE -->
+  <main class="coming-soon-main">
+
+    <section class="coming-soon-card" aria-labelledby="comingSoonTitle">
+
+      <!-- DECORATIVE ELEMENTS -->
+      <div class="coming-soon-decoration coming-soon-decoration-one" aria-hidden="true"></div>
+      <div class="coming-soon-decoration coming-soon-decoration-two" aria-hidden="true"></div>
+
+      <!-- LOGO -->
+      <a href="index.html" class="coming-soon-logo" aria-label="PolicyPath Home">
+
+        <img
+          class="logo-light"
+          src="images/light-logo.png"
+          alt="PolicyPath Logo"
+        >
+
+        <img
+          class="logo-dark"
+          src="images/dark-logo.png"
+          alt="PolicyPath Logo"
+        >
+
+        <span class="coming-soon-logo-text">
+          <span class="coming-soon-brand-title">
+            Policy<span>Path</span>
+          </span>
+          <span class="coming-soon-brand-tagline">
+            INSURANCE, MADE CLEAR.
+          </span>
+        </span>
+
+      </a>
+
+      <!-- ANNOUNCEMENT -->
+      <div class="coming-soon-announcement">
+        <span class="coming-soon-live-dot"></span>
+        SOMETHING BETTER IS ON THE WAY
+      </div>
+
+      <!-- MAIN HEADING -->
+      <h1 class="coming-soon-title" id="comingSoonTitle">
+        A Clearer Path to
+        <span>Insurance Starts Soon.</span>
+      </h1>
+
+      <p class="coming-soon-description">
+        We're preparing a simpler way to explore coverage, understand
+        policy details, and make confident insurance decisions.
+        PolicyPath is almost ready.
+      </p>
+
+      <!-- COUNTDOWN -->
+      <div class="coming-soon-countdown" aria-label="Time remaining until launch">
+
+        <div class="coming-soon-time-box">
+          <span class="coming-soon-time-value" id="countdownDays">000</span>
+          <span class="coming-soon-time-label">Days</span>
+        </div>
+
+        <span class="coming-soon-countdown-separator" aria-hidden="true">:</span>
+
+        <div class="coming-soon-time-box">
+          <span class="coming-soon-time-value" id="countdownHours">00</span>
+          <span class="coming-soon-time-label">Hours</span>
+        </div>
+
+        <span class="coming-soon-countdown-separator" aria-hidden="true">:</span>
+
+        <div class="coming-soon-time-box">
+          <span class="coming-soon-time-value" id="countdownMinutes">00</span>
+          <span class="coming-soon-time-label">Minutes</span>
+        </div>
+
+        <span class="coming-soon-countdown-separator" aria-hidden="true">:</span>
+
+        <div class="coming-soon-time-box">
+          <span class="coming-soon-time-value" id="countdownSeconds">00</span>
+          <span class="coming-soon-time-label">Seconds</span>
+        </div>
+
+      </div>
+
+      <!-- COUNTDOWN STATUS -->
+      <p
+        class="coming-soon-countdown-status"
+        id="countdownStatus"
+        role="status"
+        aria-live="polite"
+      >
+        Counting down to a clearer insurance experience.
+      </p>
+
+      <!-- EMAIL NOTIFICATION -->
+      <div class="coming-soon-notify">
+
+        <h2 class="coming-soon-notify-title">
+          Be the first to know
+        </h2>
+
+        <p class="coming-soon-notify-description">
+          Leave your email to register your interest in the launch.
+        </p>
+
+        <form class="coming-soon-form" id="comingSoonForm">
+
+          <label class="coming-soon-email-label" for="comingSoonEmail">
+            Email address
+          </label>
+
+          <div class="coming-soon-input-wrap">
+            <i data-lucide="mail" aria-hidden="true"></i>
+
+            <input
+              type="email"
+              id="comingSoonEmail"
+              name="email"
+              placeholder="Enter your email address"
+              autocomplete="email"
+              maxlength="254"
+              required
+            >
+
+            <button type="submit" class="coming-soon-submit">
+              <span>Notify Me</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <p
+            class="coming-soon-form-feedback"
+            id="comingSoonFeedback"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></p>
+
+        </form>
+
+      </div>
+
+      <!-- TRUST NOTE -->
+      <div class="coming-soon-trust">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        <span>Clear information. Thoughtful guidance. Confident decisions.</span>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="coming-soon-footer">
+        <span>© <span id="comingSoonYear"></span> PolicyPath</span>
+        <span class="coming-soon-footer-divider" aria-hidden="true"></span>
+        <a href="index.html">Back to Home</a>
+      </footer>
+
+    </section>
+
+  </main>
+
+  <!-- SHARED SETTINGS -->
+  <script src="global.js"></script>
+
+  <!-- COUNTDOWN AND PAGE INTERACTIONS -->
+  <script src="comming.js"></script>
+
+</body>
+</html>

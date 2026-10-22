@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PolicyPath client dashboard for comparing insurance quotes, tracking applications and checking claim status."
+    />
+    <link rel="icon" href="images/dark-logo.png" />
+    <title>Client Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" id="sidebar">
+      <button
+        class="sidebar-close"
+        id="sidebarClose"
+        aria-label="Close menu"
+        type="button"
+      >
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="sidebar-brand">
+        <a href="index.html" class="logo" aria-label="PolicyPath Home">
+          <img
+            class="logo-light"
+            src="images/light-logo.png"
+            alt="PolicyPath logo"
+          />
+          <img
+            class="logo-dark"
+            src="images/dark-logo.png"
+            alt="PolicyPath logo"
+          />
+
+          <span class="logo-text">
+            <span class="brand-title">Policy<span class="era">Path</span></span>
+            <span class="brand-tagline">Insurance, Made Clear.</span>
+          </span>
+        </a>
+
+        <button
+          class="sidebar-collapse-btn"
+          id="sidebarCollapseBtn"
+          type="button"
+          aria-label="Collapse sidebar"
+        >
+          <i data-lucide="panel-left-close"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-client">
+        <div class="client-avatar"><i data-lucide="user-round"></i></div>
+        <div class="sidebar-client-info">
+          <strong>Jordan Davis</strong>
+          <span>PolicyPath Client</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Dashboard navigation">
+        <p class="nav-caption">WORKSPACE</p>
+
+        <button
+          class="nav-item active"
+          data-panel="dashboard"
+          data-title="Dashboard"
+          type="button"
+        >
+          <i data-lucide="layout-dashboard"></i><span>Overview</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="quotes"
+          data-title="Compare Quotes"
+          type="button"
+        >
+          <i data-lucide="scale"></i><span>Compare Quotes</span
+          ><span class="nav-count">3</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="policies"
+          data-title="My Policies"
+          type="button"
+        >
+          <i data-lucide="shield-check"></i><span>My Policies</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="applications"
+          data-title="Applications"
+          type="button"
+        >
+          <i data-lucide="file-clock"></i><span>Applications</span
+          ><span class="nav-count">2</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="claims"
+          data-title="Claim Status"
+          type="button"
+        >
+          <i data-lucide="clipboard-check"></i><span>Claim Status</span>
+        </button>
+
+        <div class="sidebar-nav-divider"></div>
+        <p class="nav-caption">ACCOUNT</p>
+
+        <button
+          class="nav-item"
+          data-panel="profile"
+          data-title="My Profile"
+          type="button"
+        >
+          <i data-lucide="user-round"></i><span>My Profile</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="settings"
+          data-title="Settings"
+          type="button"
+        >
+          <i data-lucide="settings-2"></i><span>Settings</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-help">
+        <span class="help-icon"><i data-lucide="headset"></i></span>
+        <div>
+          <strong>Need a hand?</strong>
+          <p>Our team is here to help.</p>
+          <a href="contact.html"
+            >Contact support <i data-lucide="arrow-up-right"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <button class="sidebar-logout" id="logoutBtn" type="button">
+          <i data-lucide="log-out"></i>
+          <a href="login.html "><span>Logout</span></a>
+        </button>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div class="header-left">
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+
+          <div class="page-heading">
+            <span>CLIENT PORTAL</span>
+            <h1 id="pageTitle">Dashboard</h1>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <label class="dashboard-search">
+            <i data-lucide="search"></i>
+            <input
+              id="dashboardSearch"
+              type="search"
+              placeholder="Search dashboard..."
+              aria-label="Search dashboard"
+            />
+          </label>
+
+          <button
+            class="header-icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <button
+            class="header-icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <button
+            class="header-icon-btn notification-btn"
+            id="notificationBtn"
+            type="button"
+            aria-label="Notifications"
+          >
+            <i data-lucide="bell"></i><span class="notification-dot"></span>
+          </button>
+
+          <div class="profile-dropdown">
+            <button
+              class="profile-trigger"
+              id="profileToggle"
+              type="button"
+              aria-expanded="false"
+            >
+              <span class="profile-avatar"><i data-lucide="user-round"></i></span>
+              <span class="profile-name">Jordan Davis</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+
+            <div class="profile-menu" id="profileMenu">
+              <button class="profile-menu-item" id="profileLink" type="button">
+                <i data-lucide="user-round"></i> My Profile
+              </button>
+              <button
+                class="profile-menu-item"
+                id="dashboardLink"
+                type="button"
+              >
+                <i data-lucide="layout-dashboard"></i> Dashboard
+              </button>
+              <button
+                class="profile-menu-item logout"
+                id="profileLogout"
+                type="button"
+              >
+                <i data-lucide="log-out"></i> Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="panels-container">
+        <!-- DASHBOARD OVERVIEW -->
+        <section class="dashboard-panel active" id="panel-dashboard">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">YOUR INSURANCE, IN ONE PLACE</span>
+              <h2>Welcome back, Jordan</h2>
+              <p>
+                Compare cover, review applications and keep track of your
+                claims.
+              </p>
+            </div>
+            <button class="primary-btn" data-open-panel="quotes" type="button">
+              <i data-lucide="plus"></i> Compare a quote
+            </button>
+          </div>
+
+          <section class="welcome-banner">
+            <div class="welcome-copy">
+              <span class="welcome-label"
+                ><i data-lucide="sparkles"></i> YOUR POLICYPATH SNAPSHOT</span
+              >
+              <h3>Feel more confident about your cover.</h3>
+              <p>
+                Review your insurance options and pick up where you left off.
+              </p>
+              <button
+                class="banner-link"
+                data-open-panel="applications"
+                type="button"
+              >
+                View application progress <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+            <div class="banner-art" aria-hidden="true">
+              <div class="banner-orbit orbit-one"></div>
+              <div class="banner-orbit orbit-two"></div>
+              <div class="banner-shield">
+                <i data-lucide="shield-check"></i>
+              </div>
+            </div>
+          </section>
+
+          <section class="dashboard-stats">
+            <article class="stat-card">
+              <div class="stat-icon"><i data-lucide="files"></i></div>
+              <span class="stat-label">Saved quotes</span>
+              <strong>03</strong>
+              <p>Ready for your review</p>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon teal"><i data-lucide="file-clock"></i></div>
+              <span class="stat-label">Applications</span>
+              <strong>02</strong>
+              <p>Awaiting next steps</p>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon gold">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <span class="stat-label">Active policies</span>
+              <strong>02</strong>
+              <p>Across your cover needs</p>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon coral">
+                <i data-lucide="clipboard-check"></i>
+              </div>
+              <span class="stat-label">Open claims</span>
+              <strong>01</strong>
+              <p>Latest update available</p>
+            </article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="dashboard-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow">YOUR SHORTLIST</span>
+                  <h3>Recently compared quotes</h3>
+                </div>
+                <button
+                  class="text-link"
+                  data-open-panel="quotes"
+                  type="button"
+                >
+                  View all <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+
+              <div class="quote-row">
+                <span class="provider-mark provider-blue">IC</span>
+                <div class="quote-details">
+                  <strong>Health Secure Plus</strong
+                  ><span>Health · Family floater</span>
+                </div>
+                <div class="quote-price">
+                  <strong>₹15,000</strong><span>per year</span>
+                </div>
+                <button
+                  class="icon-action"
+                  data-open-panel="quotes"
+                  type="button"
+                  aria-label="View quotes"
+                >
+                  <i data-lucide="chevron-right"></i>
+                </button>
+              </div>
+
+              <div class="quote-row">
+                <span class="provider-mark provider-green">FC</span>
+                <div class="quote-details">
+                  <strong>Family Care Advantage</strong
+                  ><span>Health · Family floater</span>
+                </div>
+                <div class="quote-price">
+                  <strong>₹17,160</strong><span>per year</span>
+                </div>
+                <button
+                  class="icon-action"
+                  data-open-panel="quotes"
+                  type="button"
+                  aria-label="View quotes"
+                >
+                  <i data-lucide="chevron-right"></i>
+                </button>
+              </div>
+
+              <div class="quote-row">
+                <span class="provider-mark provider-gold">SF</span>
+                <div class="quote-details">
+                  <strong>Secure Future Life</strong
+                  ><span>Life · Term plan</span>
+                </div>
+                <div class="quote-price">
+                  <strong>₹10,680</strong><span>per year</span>
+                </div>
+                <button
+                  class="icon-action"
+                  data-open-panel="quotes"
+                  type="button"
+                  aria-label="View quotes"
+                >
+                  <i data-lucide="chevron-right"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow">KEEP THINGS MOVING</span>
+                  <h3>Next steps</h3>
+                </div>
+              </div>
+              <div class="task-item">
+                <span class="task-icon"><i data-lucide="file-up"></i></span>
+                <div>
+                  <strong>Review identity proof</strong>
+                  <p>Health Secure Plus application</p>
+                </div>
+                <button
+                  class="icon-action"
+                  data-open-panel="applications"
+                  type="button"
+                  aria-label="View applications"
+                >
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+              <div class="task-item">
+                <span class="task-icon teal"
+                  ><i data-lucide="clipboard-list"></i
+                ></span>
+                <div>
+                  <strong>Review claim documents</strong>
+                  <p>Claim CL-2026-0142</p>
+                </div>
+                <button
+                  class="icon-action"
+                  data-open-panel="claims"
+                  type="button"
+                  aria-label="View claims"
+                >
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="dashboard-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow">COVER AT A GLANCE</span>
+                  <h3>Your active policies</h3>
+                </div>
+                <button
+                  class="text-link"
+                  data-open-panel="policies"
+                  type="button"
+                >
+                  View policies <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+              <div class="policy-mini">
+                <span class="policy-mini-icon"
+                  ><i data-lucide="heart-pulse"></i
+                ></span>
+                <div class="policy-mini-copy">
+                  <strong>Health Secure Plus</strong
+                  ><span>Policy ID: PP-HL-260184</span>
+                </div>
+                <span class="status-pill status-active">Active</span>
+              </div>
+              <div class="policy-mini">
+                <span class="policy-mini-icon life"
+                  ><i data-lucide="users"></i
+                ></span>
+                <div class="policy-mini-copy">
+                  <strong>Secure Future Term Life</strong
+                  ><span>Policy ID: PP-LF-260092</span>
+                </div>
+                <span class="status-pill status-active">Active</span>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow">LATEST UPDATES</span>
+                  <h3>Recent activity</h3>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-mark done"
+                  ><i data-lucide="check"></i
+                ></span>
+                <div>
+                  <strong>Quote comparison saved</strong>
+                  <p>Health Secure Plus added to your shortlist.</p>
+                  <span>Today · 10:24 AM</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-mark"
+                  ><i data-lucide="file-clock"></i
+                ></span>
+                <div>
+                  <strong>Application under review</strong>
+                  <p>Your submitted details are being checked.</p>
+                  <span>Yesterday · 3:10 PM</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-mark gold"
+                  ><i data-lucide="message-square"></i
+                ></span>
+                <div>
+                  <strong>Claim update received</strong>
+                  <p>Additional documents may be required.</p>
+                  <span>18 Oct 2026</span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <!-- COMPARE QUOTES -->
+        <section class="dashboard-panel" id="panel-quotes">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">MAKE AN INFORMED CHOICE</span>
+              <h2>Compare quotes</h2>
+              <p>
+                Review example quote options before deciding what fits your
+                needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="quote-filter-bar">
+            <label
+              >Insurance type
+              <select id="quoteTypeFilter">
+                <option value="all">All types</option>
+                <option value="health">Health</option>
+                <option value="life">Life</option>
+                <option value="motor">Motor</option>
+              </select>
+            </label>
+            <label
+              >Sort by
+              <select id="quoteSort">
+                <option value="recommended">Recommended</option>
+                <option value="price-low">Premium: low to high</option>
+                <option value="cover-high">Cover: high to low</option>
+              </select>
+            </label>
+            <button
+              class="primary-btn small-btn"
+              id="compareSelectedBtn"
+              type="button"
+            >
+              Compare selected (<span id="compareCount">0</span>)
+            </button>
+          </div>
+
+          <div class="quote-cards" id="quoteCards">
+            <article
+              class="dashboard-card quote-card"
+              data-type="health"
+              data-price="15000"
+              data-cover="1000000"
+            >
+              <div class="quote-card-top">
+                <span class="provider-mark provider-blue">IC</span
+                ><span class="status-pill status-recommended">Recommended</span>
+              </div>
+              <span class="card-eyebrow">HEALTH INSURANCE</span>
+              <h3>Health Secure Plus</h3>
+              <p>Family protection with a range of everyday health benefits.</p>
+              <div class="quote-premium">
+                <strong>₹15,000</strong><span>/ year</span>
+              </div>
+              <div class="quote-metrics">
+                <div><span>Sum insured</span><strong>₹10 lakh</strong></div>
+                <div>
+                  <span>Cover type</span><strong>Family floater</strong>
+                </div>
+              </div>
+              <ul class="benefit-list">
+                <li>Hospitalisation cover</li>
+                <li>Day-care procedures</li>
+                <li>Check network and policy terms</li>
+              </ul>
+              <label class="compare-check"
+                ><input
+                  type="checkbox"
+                  class="quote-select"
+                  value="health-secure"
+                />
+                Add to compare</label
+              >
+              <button class="primary-btn small-btn save-quote" type="button">
+                <i data-lucide="bookmark"></i> Save quote
+              </button>
+            </article>
+
+            <article
+              class="dashboard-card quote-card"
+              data-type="health"
+              data-price="17160"
+              data-cover="1500000"
+            >
+              <div class="quote-card-top">
+                <span class="provider-mark provider-green">FC</span
+                ><span class="status-pill status-active">Higher cover</span>
+              </div>
+              <span class="card-eyebrow">HEALTH INSURANCE</span>
+              <h3>Family Care Advantage</h3>
+              <p>
+                A higher sum insured for customers who want a larger cover
+                limit.
+              </p>
+              <div class="quote-premium">
+                <strong>₹17,160</strong><span>/ year</span>
+              </div>
+              <div class="quote-metrics">
+                <div><span>Sum insured</span><strong>₹15 lakh</strong></div>
+                <div>
+                  <span>Cover type</span><strong>Family floater</strong>
+                </div>
+              </div>
+              <ul class="benefit-list">
+                <li>Hospitalisation cover</li>
+                <li>Pre/post hospitalisation, subject to terms</li>
+                <li>Optional add-ons may apply</li>
+              </ul>
+              <label class="compare-check"
+                ><input
+                  type="checkbox"
+                  class="quote-select"
+                  value="family-care"
+                />
+                Add to compare</label
+              >
+              <button class="primary-btn small-btn save-quote" type="button">
+                <i data-lucide="bookmark"></i> Save quote
+              </button>
+            </article>
+
+            <article
+              class="dashboard-card quote-card"
+              data-type="life"
+              data-price="10680"
+              data-cover="10000000"
+            >
+              <div class="quote-card-top">
+                <span class="provider-mark provider-gold">SF</span
+                ><span class="status-pill status-active">Term cover</span>
+              </div>
+              <span class="card-eyebrow">LIFE INSURANCE</span>
+              <h3>Secure Future Term Life</h3>
+              <p>
+                Term protection designed to support your family's financial
+                future.
+              </p>
+              <div class="quote-premium">
+                <strong>₹10,680</strong><span>/ year</span>
+              </div>
+              <div class="quote-metrics">
+                <div><span>Life cover</span><strong>₹1 crore</strong></div>
+                <div><span>Plan type</span><strong>Term life</strong></div>
+              </div>
+              <ul class="benefit-list">
+                <li>Death benefit, subject to policy terms</li>
+                <li>Flexible policy term options</li>
+                <li>Riders may be available</li>
+              </ul>
+              <label class="compare-check"
+                ><input
+                  type="checkbox"
+                  class="quote-select"
+                  value="secure-life"
+                />
+                Add to compare</label
+              >
+              <button class="primary-btn small-btn save-quote" type="button">
+                <i data-lucide="bookmark"></i> Save quote
+              </button>
+            </article>
+          </div>
+
+          <div
+            class="dashboard-card compare-results"
+            id="compareResults"
+            hidden
+          >
+            <div class="card-header">
+              <h3>Selected quote comparison</h3>
+              <button
+                class="icon-action"
+                id="closeCompare"
+                type="button"
+                aria-label="Close comparison"
+              >
+                <i data-lucide="x"></i>
+              </button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Health Secure Plus</th>
+                    <th>Family Care Advantage</th>
+                    <th>Secure Future Term Life</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Annual premium</td>
+                    <td>₹15,000</td>
+                    <td>₹17,160</td>
+                    <td>₹10,680</td>
+                  </tr>
+                  <tr>
+                    <td>Cover</td>
+                    <td>₹10 lakh</td>
+                    <td>₹15 lakh</td>
+                    <td>₹1 crore</td>
+                  </tr>
+                  <tr>
+                    <td>Plan type</td>
+                    <td>Health</td>
+                    <td>Health</td>
+                    <td>Term life</td>
+                  </tr>
+                  <tr>
+                    <td>Reminder</td>
+                    <td colspan="3">
+                      Review exclusions, waiting periods, eligibility and the
+                      final insurer quote.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="demo-note">
+            <i data-lucide="info"></i> Premiums and benefits are sample content,
+            not live insurer offers.
+          </p>
+        </section>
+
+        <!-- POLICIES -->
+        <section class="dashboard-panel" id="panel-policies">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">YOUR COVER, ORGANIZED</span>
+              <h2>My policies</h2>
+              <p>Review your current policies and renewal information.</p>
+            </div>
+            <button class="primary-btn" data-open-panel="quotes" type="button">
+              Explore quotes
+            </button>
+          </div>
+          <div class="policy-list">
+            <article class="dashboard-card policy-detail-card">
+              <span class="policy-large-icon"
+                ><i data-lucide="heart-pulse"></i
+              ></span>
+              <div>
+                <span class="card-eyebrow">HEALTH INSURANCE</span>
+                <h3>Health Secure Plus</h3>
+                <p>Policy ID: PP-HL-260184</p>
+                <span class="status-pill status-active">Active</span>
+              </div>
+              <div class="policy-facts">
+                <div><span>Sum insured</span><strong>₹10 lakh</strong></div>
+                <div>
+                  <span>Policy holder</span><strong>Jordan Davis</strong>
+                </div>
+                <div><span>Renewal date</span><strong>15 Aug 2027</strong></div>
+              </div>
+            </article>
+            <article class="dashboard-card policy-detail-card">
+              <span class="policy-large-icon life"
+                ><i data-lucide="users"></i
+              ></span>
+              <div>
+                <span class="card-eyebrow">LIFE INSURANCE</span>
+                <h3>Secure Future Term Life</h3>
+                <p>Policy ID: PP-LF-260092</p>
+                <span class="status-pill status-active">Active</span>
+              </div>
+              <div class="policy-facts">
+                <div><span>Life cover</span><strong>₹1 crore</strong></div>
+                <div>
+                  <span>Policy holder</span><strong>Jordan Davis</strong>
+                </div>
+                <div><span>Renewal date</span><strong>10 Sep 2027</strong></div>
+              </div>
+            </article>
+          </div>
+          <p class="demo-note">
+            <i data-lucide="info"></i> Policy details shown here are
+            illustrative. Check your insurer's official documents for accurate
+            terms and dates.
+          </p>
+        </section>
+
+        <!-- APPLICATIONS -->
+        <section class="dashboard-panel" id="panel-applications">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">YOUR APPLICATION JOURNEY</span>
+              <h2>Applications</h2>
+              <p>Track the progress of your insurance applications.</p>
+            </div>
+          </div>
+
+          <article class="dashboard-card application-card">
+            <div class="application-head">
+              <span class="application-icon"
+                ><i data-lucide="heart-pulse"></i
+              ></span>
+              <div>
+                <span class="card-eyebrow">HEALTH INSURANCE</span>
+                <h3>Health Secure Plus</h3>
+                <p>Application ID: APP-2026-0184</p>
+              </div>
+              <span class="status-pill status-review">Under review</span>
+            </div>
+            <div class="progress-label">
+              <span>Application progress</span><strong>70%</strong>
+            </div>
+            <div class="progress-track"><span style="width: 70%"></span></div>
+            <div class="progress-steps">
+              <span class="complete">Details submitted</span
+              ><span class="complete">Documents received</span
+              ><span class="current">Initial review</span><span>Decision</span>
+            </div>
+            <div class="application-next">
+              <i data-lucide="file-warning"></i>
+              <div>
+                <strong>Next step: identity verification</strong>
+                <p>
+                  Check whether the insurer has requested additional documents.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="dashboard-card application-card">
+            <div class="application-head">
+              <span class="application-icon life"
+                ><i data-lucide="users"></i
+              ></span>
+              <div>
+                <span class="card-eyebrow">LIFE INSURANCE</span>
+                <h3>Secure Future Term Life</h3>
+                <p>Application ID: APP-2026-0092</p>
+              </div>
+              <span class="status-pill status-review">Awaiting review</span>
+            </div>
+            <div class="progress-label">
+              <span>Application progress</span><strong>45%</strong>
+            </div>
+            <div class="progress-track"><span style="width: 45%"></span></div>
+            <div class="progress-steps">
+              <span class="complete">Details submitted</span
+              ><span class="current">Initial review</span><span>Assessment</span
+              ><span>Decision</span>
+            </div>
+            <div class="application-next">
+              <i data-lucide="clock-3"></i>
+              <div>
+                <strong>Next step: insurer assessment</strong>
+                <p>Timing and requirements depend on the provider and plan.</p>
+              </div>
+            </div>
+          </article>
+          <p class="demo-note">
+            <i data-lucide="info"></i> Application statuses are examples. Live
+            updates require an insurer or broker integration.
+          </p>
+        </section>
+
+        <!-- CLAIMS -->
+        <section class="dashboard-panel" id="panel-claims">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">SUPPORT WHEN IT MATTERS</span>
+              <h2>Claim status</h2>
+              <p>Follow a claim's progress and review possible next steps.</p>
+            </div>
+          </div>
+
+          <article class="claim-hero">
+            <div>
+              <span class="welcome-label"
+                ><i data-lucide="clipboard-check"></i> CURRENT CLAIM</span
+              >
+              <h3>Health reimbursement claim</h3>
+              <p>Claim reference: CL-2026-0142</p>
+              <span class="status-pill status-review">Under review</span>
+            </div>
+            <div class="claim-amount">
+              <span>Claim amount submitted</span><strong>₹28,450</strong
+              ><small>Submitted 14 Oct 2026</small>
+            </div>
+          </article>
+
+          <div class="dashboard-grid claim-grid">
+            <article class="dashboard-card">
+              <div class="card-header"><h3>Claim progress</h3></div>
+              <div class="claim-timeline">
+                <div class="timeline-item complete">
+                  <span class="timeline-dot"><i data-lucide="check"></i></span>
+                  <div>
+                    <strong>Claim submitted</strong>
+                    <p>Your request was received.</p>
+                    <span>14 Oct 2026</span>
+                  </div>
+                </div>
+                <div class="timeline-item complete">
+                  <span class="timeline-dot"><i data-lucide="check"></i></span>
+                  <div>
+                    <strong>Documents received</strong>
+                    <p>Initial documents were logged.</p>
+                    <span>15 Oct 2026</span>
+                  </div>
+                </div>
+                <div class="timeline-item current">
+                  <span class="timeline-dot"
+                    ><i data-lucide="loader-circle"></i
+                  ></span>
+                  <div>
+                    <strong>Assessment in progress</strong>
+                    <p>The claims team is reviewing the information.</p>
+                    <span>Current stage</span>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-dot">4</span>
+                  <div>
+                    <strong>Decision and settlement</strong>
+                    <p>The insurer will share the outcome.</p>
+                    <span>Upcoming</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header"><h3>Claim details</h3></div>
+              <div class="detail-list">
+                <div class="detail-row">
+                  <span>Claim reference</span><strong>CL-2026-0142</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Policy</span><strong>Health Secure Plus</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Claim type</span><strong>Reimbursement</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Current status</span><strong>Under review</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Last updated</span><strong>18 Oct 2026</strong>
+                </div>
+              </div>
+              <button
+                class="primary-btn full-btn"
+                type="button"
+                data-notice="This preview is not connected to insurer claim documents. Check your insurer's official claim portal for current requirements."
+              >
+                Check claim requirements
+              </button>
+            </article>
+          </div>
+          <p class="demo-note">
+            <i data-lucide="info"></i> Claim details and amounts are sample
+            content. Use the insurer's official channel for live claim
+            information.
+          </p>
+        </section>
+
+        <!-- PROFILE -->
+        <section class="dashboard-panel" id="panel-profile">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">YOUR ACCOUNT DETAILS</span>
+              <h2>My profile</h2>
+              <p>Review the contact details associated with your account.</p>
+            </div>
+          </div>
+          <form class="dashboard-card profile-form" id="profileForm">
+            <div class="profile-form-heading">
+              <span class="profile-avatar large"><i data-lucide="user-round"></i></span>
+              <div>
+                <h3>Jordan Davis</h3>
+                <p>PolicyPath Client</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label
+                >Full name<input name="fullName" value="Jordan Davis" required
+              /></label>
+              <label
+                >Email address<input
+                  name="email"
+                  type="email"
+                  value="jordan.davis@example.com"
+                  required
+              /></label>
+              <label
+                >Mobile number<input
+                  name="phone"
+                  type="tel"
+                  value="+91 98765 43210"
+              /></label>
+              <label
+                >Preferred contact<select name="contact">
+                  <option>Email</option>
+                  <option>Phone</option>
+                  <option>SMS</option>
+                </select></label
+              >
+              <label class="full-field"
+                >City<input name="city" value="Hyderabad"
+              /></label>
+            </div>
+            <div class="form-actions">
+              <span class="form-note"
+                ><i data-lucide="lock-keyhole"></i> Keep your information
+                secure.</span
+              ><button class="primary-btn" type="submit">
+                <i data-lucide="save"></i> Save changes
+              </button>
+            </div>
+          </form>
+          <p class="demo-note">
+            <i data-lucide="info"></i> This sample form does not send or save
+            information to a server.
+          </p>
+        </section>
+
+        <!-- SETTINGS -->
+        <section class="dashboard-panel" id="panel-settings">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow">MAKE IT YOURS</span>
+              <h2>Settings</h2>
+              <p>Adjust the dashboard appearance on this device.</p>
+            </div>
+          </div>
+
+          <div class="settings-list">
+            <article class="dashboard-card setting-row">
+              <span class="setting-icon"><i data-lucide="moon-star"></i></span>
+              <div>
+                <strong>Dark mode</strong>
+                <p>Switch to a darker colour scheme.</p>
+              </div>
+              <label class="switch"
+                ><input type="checkbox" id="settingsThemeToggle" /><span
+                  class="switch-track"
+                ></span
+              ></label>
+            </article>
+            <article class="dashboard-card setting-row">
+              <span class="setting-icon"><i data-lucide="languages"></i></span>
+              <div>
+                <strong>Right-to-left layout</strong>
+                <p>Preview the dashboard with RTL direction.</p>
+              </div>
+              <label class="switch"
+                ><input type="checkbox" id="settingsRtlToggle" /><span
+                  class="switch-track"
+                ></span
+              ></label>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <footer class="dashboard-footer">
+        <span>© 2026 PolicyPath. Insurance, Made Clear.</span>
+        <div>
+          <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a
+          ><a href="contact.html">Support</a>
+        </div>
+      </footer>
+    </main>
+
+    <div
+      class="toast-region"
+      id="toastRegion"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+    <script src="global.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

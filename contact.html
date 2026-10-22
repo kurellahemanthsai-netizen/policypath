@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/dark-logo.png" />
+
+    <title>Contact</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- ================= POLICYPATH HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html" aria-label="PolicyPath Home">
+            <img
+              class="logo-light"
+              src="images/light-logo.png"
+              alt="PolicyPath Logo"
+            />
+
+            <img
+              class="logo-dark"
+              src="images/dark-logo.png"
+              alt="PolicyPath Logo"
+            />
+          </a>
+
+          <div class="logo-text">
+            <a href="index.html" class="brand-title">
+              Policy<span class="era">Path</span>
+            </a>
+            <p>Insurance, Made Clear.</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="primaryNavbar">
+          <ul class="nav-links">
+            <!-- Home Dropdown -->
+            <li class="dropdown">
+              <a href="index.html">
+                Home
+                <i data-lucide="chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house"></i>
+                    Home 1 — Classic
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles"></i>
+                    Home 2 — Premium
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="claims.html">Claims Assistance</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <!-- Mobile Sign Up Button -->
+          <div class="mobile-book">
+            <a href="login.html" class="book-btn">
+            Login
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-buttons">
+          <!-- RTL Toggle -->
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL mode"
+            title="RTL Mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Dark Mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- Desktop Sign Up -->
+          <a href="login.html" class="book-btn desktop-book">
+           Login
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     POLICYPath — CONTACT HERO
+===================================================== -->
+
+    <section class="contact-hero-section">
+      <div class="contact-hero-container">
+        <!-- LEFT: CONTENT -->
+        <div class="contact-hero-content">
+          <span class="contact-hero-eyebrow">
+            <span class="contact-hero-eyebrow-line"></span>
+            WE'RE HERE TO HELP
+          </span>
+
+          <h1 class="contact-hero-title">
+            Let's Talk About
+            <span>Your Protection.</span>
+          </h1>
+
+          <p class="contact-hero-description">
+            Have questions about health insurance, life coverage, or choosing
+            the right policy? Our team is here to help you understand your
+            options and take your next step with confidence.
+          </p>
+
+          <div class="contact-hero-actions">
+            <a href="#contact-form" class="contact-hero-primary-btn">
+              Get in Touch
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a href="#contact-information" class="contact-hero-secondary-btn">
+              Contact Information
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="contact-hero-trust">
+            <span class="contact-hero-trust-icon">
+              <i data-lucide="shield-check"></i>
+            </span>
+
+            <p>Clear answers. Personal guidance. Confident decisions.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: IMAGE -->
+        <div class="contact-hero-visual">
+          <div class="contact-hero-image-wrap">
+            <img
+              src="images/hero-6.png"
+              alt="Insurance professional helping clients understand their coverage options"
+              class="contact-hero-image"
+              fetchpriority="high"
+            />
+
+            <div class="contact-hero-image-overlay"></div>
+          </div>
+
+          <!-- FLOATING INFORMATION CARD -->
+          <div class="contact-hero-floating-card">
+            <div class="contact-hero-floating-icon">
+              <i data-lucide="messages-square"></i>
+            </div>
+
+            <div class="contact-hero-floating-text">
+              <h3>Need some guidance?</h3>
+              <p>We're ready to listen and help.</p>
+            </div>
+
+            <i
+              data-lucide="arrow-up-right"
+              class="contact-hero-floating-arrow"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICYPATH — CONTACT INFORMATION
+     Four Equal Cards | Light/Dark Mode | RTL | Responsive
+===================================================== -->
+
+    <section class="contact-information-section" id="contact-information">
+      <div class="contact-information-container">
+        <!-- SECTION HEADER -->
+        <header class="contact-information-header">
+          <span class="contact-information-eyebrow">
+            <span class="contact-information-eyebrow-line"></span>
+            LET'S CONNECT
+          </span>
+
+          <h2 class="contact-information-title">
+            We're Here to <span>Help You.</span>
+          </h2>
+
+          <p class="contact-information-description">
+            Have questions or need assistance? Contact our team for clear
+            guidance and support with your insurance needs.
+          </p>
+        </header>
+
+        <!-- CONTACT CARDS -->
+        <div class="contact-information-grid">
+          <!-- CARD 1: PHONE -->
+          <article class="contact-information-card">
+            <div class="contact-information-card-top">
+              <div class="contact-information-icon">
+                <i data-lucide="phone-call"></i>
+              </div>
+              <span class="contact-information-card-number">01</span>
+            </div>
+
+            <h3 class="contact-information-card-title">Contact Number</h3>
+
+            <p class="contact-information-card-description">
+              Speak with our team about your policy, coverage options, or
+              insurance-related questions.
+            </p>
+
+            <div class="contact-information-detail">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919090909090">+91 90909 09090</a>
+            </div>
+
+            <a href="tel:+919090909090" class="contact-information-link">
+              <span>Call Us</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- CARD 2: EMAIL -->
+          <article class="contact-information-card">
+            <div class="contact-information-card-top">
+              <div class="contact-information-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <span class="contact-information-card-number">02</span>
+            </div>
+
+            <h3 class="contact-information-card-title">Email Address</h3>
+
+            <p class="contact-information-card-description">
+              Send your questions or enquiries. We're happy to help you
+              understand your more insurance options.
+            </p>
+
+            <div class="contact-information-detail">
+              <i data-lucide="at-sign"></i>
+              <a href="mailto:hello@policypath.com"> hello@policypath.com </a>
+            </div>
+
+            <a
+              href="mailto:hello@policypath.com?subject=Insurance%20Enquiry"
+              class="contact-information-link"
+            >
+              <span>Send an Email</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- CARD 3: LOCATION -->
+          <article class="contact-information-card">
+            <div class="contact-information-card-top">
+              <div class="contact-information-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <span class="contact-information-card-number">03</span>
+            </div>
+
+            <h3 class="contact-information-card-title">Our Location</h3>
+
+            <p class="contact-information-card-description">
+              Planning a visit? Find Hyderabad on Google Maps and explore
+              directions to your destination.
+            </p>
+
+            <div class="contact-information-detail">
+              <i data-lucide="map-pinned"></i>
+              <span>Hyderabad, Telangana</span>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/place/Hyderabad,+Telangana/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-information-link"
+            >
+              <span>Get Directions</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </article>
+
+          <!-- CARD 4: WORKING HOURS -->
+          <article class="contact-information-card">
+            <div class="contact-information-card-top">
+              <div class="contact-information-icon">
+                <i data-lucide="clock-3"></i>
+              </div>
+              <span class="contact-information-card-number">04</span>
+            </div>
+
+            <h3 class="contact-information-card-title">Working Hours</h3>
+
+            <p class="contact-information-card-description">
+              Check our office schedule before contacting our team or planning a
+              visit.
+            </p>
+
+            <div class="contact-information-hours-list">
+              <div class="contact-information-hours-row">
+                <span class="contact-information-day">Monday – Friday</span>
+                <span class="contact-information-time">9 AM – 6 PM</span>
+              </div>
+
+              <div class="contact-information-hours-row">
+                <span class="contact-information-day">Saturday</span>
+                <span class="contact-information-time">9 AM – 1 PM</span>
+              </div>
+
+              <div class="contact-information-hours-row">
+                <span class="contact-information-day">Sunday</span>
+                <span class="contact-information-closed">Closed</span>
+              </div>
+            </div>
+
+            <div class="contact-information-status">
+              <i data-lucide="calendar-check"></i>
+              <span>Hours to be confirmed</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICYPATH — CONTACT FORM
+     Responsive | Light/Dark Mode | RTL
+===================================================== -->
+
+    <section class="contact-form-section" id="contact-form">
+      <div class="contact-form-container">
+        <!-- LEFT CONTENT -->
+        <div class="contact-form-content">
+          <span class="contact-form-eyebrow">
+            <span class="contact-form-eyebrow-line"></span>
+            GET IN TOUCH
+          </span>
+
+          <h2 class="contact-form-title">
+            Let's Start a <span>Conversation.</span>
+          </h2>
+
+          <p class="contact-form-description">
+            Have questions about your insurance policy, coverage options, or
+            claims process? Send us your enquiry, and our team will help you
+            find the information you need to make informed decisions.
+          </p>
+
+          <!-- SUPPORT POINTS -->
+          <div class="contact-form-benefits">
+            <div class="contact-form-benefit">
+              <div class="contact-form-benefit-icon">
+                <i data-lucide="messages-square"></i>
+              </div>
+              <div class="contact-form-benefit-text">
+                <h3>Personal Guidance</h3>
+                <p>Get help understanding your insurance options.</p>
+              </div>
+            </div>
+
+            <div class="contact-form-benefit">
+              <div class="contact-form-benefit-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="contact-form-benefit-text">
+                <h3>Clear Information</h3>
+                <p>Ask questions and make more confident decisions.</p>
+              </div>
+            </div>
+
+            <div class="contact-form-benefit">
+              <div class="contact-form-benefit-icon">
+                <i data-lucide="mail-check"></i>
+              </div>
+              <div class="contact-form-benefit-text">
+                <h3>Easy Enquiries</h3>
+                <p>Tell us what you need help with in a few simple steps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-help">
+            <i data-lucide="info"></i>
+            <p>
+              Prefer email? Contact us directly at
+              <a href="mailto:hello@policypath.com">hello@policypath.com</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form-panel">
+          <div class="contact-form-panel-header">
+            <span class="contact-form-panel-label">YOUR ENQUIRY</span>
+            <h3 class="contact-form-panel-title">How can we help?</h3>
+            <p class="contact-form-panel-description">
+              Complete the form below and tell us how we can assist you.
+            </p>
+          </div>
+
+          <form class="contact-form" id="policypath-contact-form">
+            <div class="contact-form-fields">
+              <!-- FULL NAME -->
+              <div class="contact-form-field">
+                <label for="contact-full-name">Full Name <span>*</span></label>
+                <input
+                  type="text"
+                  id="contact-full-name"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="contact-form-field">
+                <label for="contact-email">Email Address <span>*</span></label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- PHONE -->
+              <div class="contact-form-field">
+                <label for="contact-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  placeholder="+91 XXXXX XXXXX"
+                  autocomplete="tel"
+                  inputmode="tel"
+                />
+              </div>
+
+              <!-- ENQUIRY TYPE -->
+              <div class="contact-form-field">
+                <label for="contact-enquiry">Enquiry Type <span>*</span></label>
+                <select id="contact-enquiry" name="enquiryType" required>
+                  <option value="" disabled selected>Select an enquiry</option>
+                  <option value="health-insurance">Health Insurance</option>
+                  <option value="life-insurance">Life Insurance</option>
+                  <option value="policy-coverage">Policy Coverage</option>
+                  <option value="claims-support">Claims Support</option>
+                  <option value="general-enquiry">General Enquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- MESSAGE -->
+              <div class="contact-form-field contact-form-field-full">
+                <label for="contact-message">Your Message <span>*</span></label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us how we can help..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- CONSENT -->
+            <label class="contact-form-consent">
+              <input type="checkbox" name="consent" required />
+              <span>
+                I agree to be contacted regarding my enquiry and acknowledge the
+                website's privacy policy.
+              </span>
+            </label>
+
+            <!-- SUBMIT -->
+            <button type="submit" class="contact-form-submit">
+              <span>Send Your Enquiry</span>
+              <i data-lucide="arrow-up-right"></i>
+            </button>
+
+            <p class="contact-form-privacy">
+              <i data-lucide="lock-keyhole"></i>
+              Your information should be handled securely and in accordance with
+              the applicable privacy policy.
+            </p>
+
+            <p
+              class="contact-form-feedback"
+              id="contact-form-feedback"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICYPath — GOOGLE MAPS SECTION
+     Interactive Map | Light/Dark Mode | RTL | Responsive
+===================================================== -->
+
+    <section class="contact-map-section" id="contact-map">
+      <div class="contact-map-container">
+        <!-- SECTION HEADER -->
+        <header class="contact-map-header">
+          <span class="contact-map-eyebrow">
+            <span class="contact-map-eyebrow-line"></span>
+            FIND OUR OFFICE
+          </span>
+
+          <h2 class="contact-map-title">We're Easy to <span>Find.</span></h2>
+
+          <p class="contact-map-description">
+            Find our location and plan your visit with ease. Use Google Maps to
+            explore directions and choose a convenient route.
+          </p>
+        </header>
+
+        <!-- MAP CONTENT -->
+        <div class="contact-map-layout">
+          <!-- MAP -->
+          <div class="contact-map-frame">
+            <iframe
+              src="https://maps.google.com/maps?q=Hyderabad%2C%20Telangana%2C%20India&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              title="Map of Hyderabad, Telangana"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+
+            <div class="contact-map-location-badge">
+              <span class="contact-map-location-dot"></span>
+              Hyderabad, Telangana
+            </div>
+          </div>
+
+          <!-- LOCATION INFORMATION -->
+          <aside class="contact-map-info">
+            <div class="contact-map-info-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+
+            <span class="contact-map-info-label">OUR LOCATION</span>
+
+            <h3 class="contact-map-info-title">Visit PolicyPath</h3>
+
+            <p class="contact-map-info-description">
+              Planning to meet our team? Use the map to explore Hyderabad and
+              find directions for your visit.
+            </p>
+
+            <div class="contact-map-info-divider"></div>
+
+            <div class="contact-map-detail">
+              <div class="contact-map-detail-icon">
+                <i data-lucide="map-pinned"></i>
+              </div>
+              <div>
+                <span class="contact-map-detail-label">City</span>
+                <p>Hyderabad, Telangana, India</p>
+              </div>
+            </div>
+
+            <div class="contact-map-detail">
+              <div class="contact-map-detail-icon">
+                <i data-lucide="navigation"></i>
+              </div>
+              <div>
+                <span class="contact-map-detail-label">Directions</span>
+                <p>Choose a route that works best for you.</p>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Hyderabad%2C%20Telangana%2C%20India"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-map-directions-btn"
+            >
+              <span>Get Directions</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <p class="contact-map-note">
+              <i data-lucide="info"></i>
+              <span
+                >Please confirm the exact office address before visiting.</span
+              >
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     POLICYPath — CONTACT FAQs
+     Accordion | Light/Dark Mode | RTL | Responsive
+===================================================== -->
+
+    <section class="contact-faq-section" id="contact-faq">
+      <div class="contact-faq-container">
+        <!-- SECTION HEADER -->
+        <header class="contact-faq-header">
+          <span class="contact-faq-eyebrow">
+            <span class="contact-faq-eyebrow-line"></span>
+            NEED SOME ANSWERS?
+          </span>
+
+          <h2 class="contact-faq-title">
+            Frequently Asked <span>Questions.</span>
+          </h2>
+
+          <p class="contact-faq-description">
+            Find answers to common questions about contacting our team,
+            understanding insurance options, and getting assistance with your
+            enquiries.
+          </p>
+        </header>
+
+        <!-- FAQ CONTENT -->
+        <div class="contact-faq-content">
+          <!-- LEFT INTRO PANEL -->
+          <aside class="contact-faq-aside">
+            <div class="contact-faq-aside-icon">
+              <i data-lucide="message-circle-question"></i>
+            </div>
+
+            <span class="contact-faq-aside-label">HERE TO HELP</span>
+
+            <h3 class="contact-faq-aside-title">Still Have Questions?</h3>
+
+            <p class="contact-faq-aside-description">
+              Can't find the answer you're looking for? Send us your question
+              and let us help you find the right information.
+            </p>
+
+            <a href="#contact-form" class="contact-faq-contact-link">
+              Contact Our Team
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <div class="contact-faq-email">
+              <i data-lucide="mail"></i>
+              <a href="mailto:hello@policypath.com"> hello@policypath.com </a>
+            </div>
+          </aside>
+
+          <!-- FAQ ACCORDION -->
+          <div class="contact-faq-list">
+            <!-- FAQ 1 -->
+            <details class="contact-faq-item" open>
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">01</span>
+                <span class="contact-faq-question-text">
+                  How can I contact PolicyPath?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  You can reach us by phone, email, or through the contact form
+                  on this page. Choose the method that works best for your
+                  enquiry and provide enough detail for us to understand how to
+                  help.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="contact-faq-item">
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">02</span>
+                <span class="contact-faq-question-text">
+                  What information should I include in my enquiry?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  Include your question, the type of insurance you're interested
+                  in, and any relevant details. Avoid sharing passwords, payment
+                  credentials, or unnecessary sensitive personal information.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="contact-faq-item">
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">03</span>
+                <span class="contact-faq-question-text">
+                  Can you help me understand policy coverage?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  We can help you identify policy features and understand
+                  important terms. Always review the insurer's official policy
+                  wording, exclusions, waiting periods, and benefit limits
+                  before making a decision.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="contact-faq-item">
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">04</span>
+                <span class="contact-faq-question-text">
+                  Can I contact you about an insurance claim?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  You can contact us with general questions about the claims
+                  process. For claim registration, urgent assistance, or a claim
+                  status update, contact your insurer through its official
+                  channels and follow the instructions in your policy documents.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="contact-faq-item">
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">05</span>
+                <span class="contact-faq-question-text">
+                  Where is your office located?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  Our location section currently displays Hyderabad, Telangana.
+                  Please confirm the exact office address with our team before
+                  planning an in-person visit.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 6 -->
+            <details class="contact-faq-item">
+              <summary class="contact-faq-question">
+                <span class="contact-faq-number">06</span>
+                <span class="contact-faq-question-text">
+                  When can I expect a response to my enquiry?
+                </span>
+                <span class="contact-faq-toggle">
+                  <i data-lucide="plus"></i>
+                </span>
+              </summary>
+
+              <div class="contact-faq-answer">
+                <p>
+                  Response times depend on the enquiry and our team's
+                  availability. If your matter is urgent, contact your insurer
+                  directly using its official phone number or customer support
+                  channels.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- =====================================================
+     POLICYPath — CONTACT FINAL CTA
+     Reference-Inspired | Light/Dark Mode | RTL | Responsive
+===================================================== -->
+
+<section class="contact-final-cta-section" id="contact-final-cta">
+  <div class="contact-final-cta-container">
+
+    <div class="contact-final-cta-card">
+
+      <!-- LEFT CONTENT -->
+      <div class="contact-final-cta-content">
+
+        <span class="contact-final-cta-eyebrow">
+          <span class="contact-final-cta-eyebrow-line"></span>
+          LET'S TALK ABOUT YOUR COVERAGE
+        </span>
+
+        <h2 class="contact-final-cta-title">
+          Have Questions? <span>We're Here to Help.</span>
+        </h2>
+
+        <p class="contact-final-cta-description">
+          Get in touch with our team for clear answers, helpful guidance,
+          and support as you explore your insurance options.
+        </p>
+
+      </div>
+
+      <!-- RIGHT CTA BUTTON -->
+      <div class="contact-final-cta-action">
+        <a href="#contact-form" class="contact-final-cta-button">
+          <span>Send an Enquiry</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= POLICYPATH FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- Brand Column -->
+    <div class="footer-col footer-brand">
+
+      <div class="footer-logo">
+        <a href="index.html" aria-label="PolicyPath Home">
+          <img
+            class="logo-light"
+            src="images/light-logo.png"
+            alt="PolicyPath Logo"
+          >
+
+          <img
+            class="logo-dark"
+            src="images/dark-logo.png"
+            alt="PolicyPath Logo"
+          >
+        </a>
+
+        <div class="footer-branding">
+          <a href="index.html" class="brand-title">
+            Policy<span class="era">Path</span>
+          </a>
+          <p>Insurance, Made Clear.</p>
+        </div>
+      </div>
+
+      <p class="footer-about">
+        Explore life and health insurance with greater clarity.
+        Understand your options and navigate your insurance
+        journey with confidence.
+      </p>
+
+      <!-- Social Media -->
+    <div class="social-media">
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <i data-lucide="camera" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Facebook" title="Facebook">
+          <i data-lucide="users" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" aria-label="Pinterest" title="Pinterest">
+          <i data-lucide="pin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto:hello@vintageera.com" aria-label="Email" title="Email">
+          <i data-lucide="mail" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About </a></li>
+        <li><a href="plans.html">Insurance Plans</a></li>
+        <li><a href="claims.html">Claims Assistance</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance Plans -->
+    <div class="footer-col">
+      <h3>Insurance Plans</h3>
+
+      <ul>
+        <li><a href="plans.html">Term Life Insurance</a></li>
+        <li><a href="plans.html">Whole Life Insurance</a></li>
+        <li><a href="plans.html">Individual Health</a></li>
+        <li><a href="plans.html">Family Health</a></li>
+        <li><a href="plans.html">Senior Health</a></li>
+        <li><a href="plans.html">Compare Plans</a></li>
+      </ul>
+    </div>
+
+    <!-- Claims Support -->
+    <div class="footer-col">
+      <h3>Claims Support</h3>
+
+      <ul>
+        <li><a href="claims.html">Claims Process</a></li>
+        <li><a href="claims.html">Required Documents</a></li>
+        <li><a href="claims.html">Life Insurance Claims</a></li>
+        <li><a href="claims.html">Health Insurance Claims</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="comming.html">Comming Soon....</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-col footer-contact">
+      <h3>Contact Us</h3>
+
+      <ul>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>India</span>
+        </li>
+
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="contact.html">90909 09090</a>
+        </li>
+
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@policypath.com">
+            hello@policypath.com
+          </a>
+        </li>
+
+        <li>
+          <i data-lucide="clock"></i>
+          <span>Monday – Saturday</span>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="footer-book-btn">
+        Talk to an Advisor
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+
+    <p>
+      © <span id="copyrightYear">2026</span>
+      <span class="footer-brand-name">Policy<span class="path">Path</span></span>.
+      All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="cookies.html">Cookies</a>
+
+      <a href="#top" class="top-btn" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+    <script src="global.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/dark-logo.png" />
+
+  <title>Page Not Found </title>
+  <meta
+    name="description"
+    content="The page you are looking for could not be found. Return to PolicyPath for clear insurance guidance."
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="404.css">
+</head>
+
+<body class="error-page">
+
+  <!-- THEME AND RTL CONTROLS -->
+  <div class="error-utility-controls">
+
+    <button
+      class="icon-btn"
+      id="darkToggle"
+      type="button"
+      aria-label="Switch to dark mode"
+      title="Dark Mode"
+      aria-pressed="false"
+    >
+      <i data-lucide="moon" aria-hidden="true"></i>
+    </button>
+
+    <button
+      class="icon-btn"
+      id="rtlToggle"
+      type="button"
+      aria-label="Switch to right-to-left mode"
+      title="RTL Mode"
+      aria-pressed="false"
+    >
+      <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+    </button>
+
+  </div>
+
+  <!-- MAIN ERROR PAGE -->
+  <main class="error-main">
+
+    <section class="error-card" aria-labelledby="errorTitle">
+
+      <!-- Decorative background elements -->
+      <div class="error-decoration error-decoration-one" aria-hidden="true"></div>
+      <div class="error-decoration error-decoration-two" aria-hidden="true"></div>
+
+      <!-- BRAND LOGO -->
+      <a href="index.html" class="error-logo" aria-label="PolicyPath Home">
+
+        <img
+          class="logo-light"
+          src="images/light-logo.png"
+          alt="PolicyPath Logo"
+        >
+
+        <img
+          class="logo-dark"
+          src="images/dark-logo.png"
+          alt="PolicyPath Logo"
+        >
+
+        <span class="error-logo-text">
+          <span class="error-brand-title">
+            Policy<span>Path</span>
+          </span>
+          <span class="error-brand-tagline">INSURANCE, MADE CLEAR.</span>
+        </span>
+
+      </a>
+
+      <!-- ERROR ILLUSTRATION -->
+      <div class="error-visual" aria-hidden="true">
+
+        <div class="error-visual-circle"></div>
+
+        <div class="error-number">404</div>
+
+        <div class="error-visual-icon error-icon-shield">
+          <i data-lucide="shield-check"></i>
+        </div>
+
+        <div class="error-visual-icon error-icon-search">
+          <i data-lucide="search"></i>
+        </div>
+
+        <div class="error-visual-dot error-dot-one"></div>
+        <div class="error-visual-dot error-dot-two"></div>
+        <div class="error-visual-dot error-dot-three"></div>
+
+      </div>
+
+      <!-- ERROR CONTENT -->
+      <div class="error-content">
+
+        <span class="error-eyebrow">
+          <span class="error-eyebrow-line"></span>
+          PAGE NOT FOUND
+          <span class="error-eyebrow-line"></span>
+        </span>
+
+        <h1 class="error-title" id="errorTitle">
+          Looks Like This Page
+          <span>Went Off the Map.</span>
+        </h1>
+
+        <p class="error-description">
+          The page you are looking for may have moved, been removed,
+          or is temporarily unavailable. Don't worry — let's help you
+          find your way back.
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <div class="error-actions">
+
+          <a href="index.html" class="error-home-button">
+            <i data-lucide="house" aria-hidden="true"></i>
+            <span>Back to Home</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          
+
+        </div>
+
+        <!-- HELPFUL LINKS -->
+        <div class="error-helpful-links">
+
+          <span class="error-helpful-label">You can also explore</span>
+
+          <nav class="error-links" aria-label="Helpful links">
+            <a href="index.html">Home</a>
+            <span class="error-link-separator" aria-hidden="true"></span>
+            <a href="plans.html">Explore Plans</a>
+            <span class="error-link-separator" aria-hidden="true"></span>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+
+        </div>
+
+      </div>
+
+      <!-- BOTTOM BRAND LINE -->
+      <div class="error-footer-line">
+        <span></span>
+        <p>Clear information. Confident decisions.</p>
+        <span></span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- SHARED GLOBAL SETTINGS -->
+  <script src="global.js"></script>
+
+  <!-- 404 PAGE INTERACTIONS -->
+  <script src="404.js"></script>
+
+</body>
+</html>
